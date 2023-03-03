@@ -1,0 +1,70 @@
+{
+    "node_name": "RT Consult",
+    "test_feature": "chiefComplaint",
+    "success_features": ["Prostate Cancer"],
+    "fail_features": "no",
+    "yes_child": {
+        "node_name": "ICD-10",
+        "test_feature": "ICD-10",
+        "success_features": [
+            "Prostate cancer"
+        ],
+        "fail_features": [],
+        "yes_child": {
+            "node_name": "Risk level",
+            "test_feature": "Risk",
+            "success_features": [
+                "very low",
+                "low",
+                "intermediate"
+            ],
+            "fail_features": [],
+            "yes_child": {
+                "node_name": "Active Surveillance",
+                "test_feature": "X",
+                "success_features": [
+                    "documented"
+                ],
+                "fail_features": [
+                    "not documented"
+                ],
+                "yes_child": {
+                    "node_name": "Doc Date",
+                    "test_feature": "date",
+                    "success_features": "01/20/2022",
+                    "fail_features": "",
+                    "yes_child": {
+                        "node_name": "Pass",
+                        "yes_child": null,
+                        "no_child": null
+                    },
+                    "no_child": {
+                        "node_name": "Fail",
+                        "yes_child": null,
+                        "no_child": null
+                    }
+                },
+                "no_child": {
+                    "node_name": "Fail",
+                    "yes_child": null,
+                    "no_child": null
+                }
+            },
+            "no_child": {
+                "node_name": "Execlude",
+                "yes_child": null,
+                "no_child": null
+            }
+        },
+        "no_child": {
+            "node_name": "Execlude",
+            "yes_child": null,
+            "no_child": null
+        }
+    },
+    "no_child": {
+        "node_name": "Execlude",
+        "yes_child": null,
+        "no_child": null
+    }
+}
