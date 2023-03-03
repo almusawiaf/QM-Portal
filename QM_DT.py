@@ -6,38 +6,6 @@ QUALITY MEASURES - DECISION TREES
 import csv
 import json
 
-# class DTNode:
-#     def __init__(self, name, value, yes_child=None, no_child=None):
-#         self.name = name
-#         # self.value = value
-#         if value :
-#             #every node will get an input value to handle and based on the 
-#             #results it moves to the next step.
-#             self.next = yes_child
-#         else:
-#             self.next= no_child
-
-# exclude_node = DTNode('Exclude', True)
-# fail_node = DTNode('Fail', True)
-# pass_node = DTNode('Pass', True)
-
-# node5 = DTNode('Doc Date',True, pass_node, fail_node)
-# node4 = DTNode('active surveillance documented', True, node5, fail_node)
-# node3 = DTNode('very low or low or intermediate', False, node4, exclude_node)
-# node2 = DTNode('ICD-10',True, node3, exclude_node)
-
-# root_node = DTNode('RT consult present', True, node2, exclude_node)
-
-# current_node = root_node
-# while current_node is not None:
-#     print(current_node.name)
-#     current_node = current_node.next
-#-----------------------------------------------------------------------------
-
-
-
-# with open('decision_tree1.json', 'r') as f:
-#     decision_tree1 = json.load(f)
 
 our_path = 'E:/Research Projects/Complex Networks Researches/PSN Patient Similarity Network/GraphAugmentation/data'
 DB_lung = ["temp-lung-dvh",
@@ -50,7 +18,6 @@ DB_prostate = ["temp-prostate-dvh",
                 "washu_measures_prostate_all_dvh_value"]
 
 sample = json.dumps({
-                        'node_name': 'RT Consult',
                         'test_feature': 'chiefComplaint',
                         'success_features': ['Prostate cancer', 'Lung Cancer'],
                         'fail_features': '',
@@ -64,7 +31,6 @@ sample = json.dumps({
 #-----------------------------------------------------------------------------
 class DTNode:
     def __init__(self, obj):
-        # self.node_id  = obj['node_id']
         self.test_feature  = obj['feature']
         self.success_features  = obj['success_features']
         self.yes_child  = obj['yes_child']
@@ -78,16 +44,13 @@ class DTNode:
         print(f'\t Yes child = {self.yes_child}')
         print(f'\t No child = {self.no_child}')
     
-
-
-
-    def isnotfinal(self):
-        if self.next in ['pass', 'fail', 'exclude']:
-            print('--------------final positive node------------')
-            print(f'{self.name}')
-            return True
-        else:
-            return False
+    # def isnotfinal(self):
+    #     if self.next in ['pass', 'fail', 'exclude']:
+    #         print('--------------final positive node------------')
+    #         print(f'{self.name}')
+    #         return True
+    #     else:
+    #         return False
 
 
 
@@ -129,8 +92,8 @@ class DTNode:
                     return result
         return None
 
-class DT:
 
+class DT:
     def __init__(self, dt_json, data):
         '''- Read a list of decision tree nodes as json
            - we create a list of DTNodes
@@ -175,3 +138,35 @@ print(results)
 
 
 
+# class DTNode:
+#     def __init__(self, name, value, yes_child=None, no_child=None):
+#         self.name = name
+#         # self.value = value
+#         if value :
+#             #every node will get an input value to handle and based on the 
+#             #results it moves to the next step.
+#             self.next = yes_child
+#         else:
+#             self.next= no_child
+
+# exclude_node = DTNode('Exclude', True)
+# fail_node = DTNode('Fail', True)
+# pass_node = DTNode('Pass', True)
+
+# node5 = DTNode('Doc Date',True, pass_node, fail_node)
+# node4 = DTNode('active surveillance documented', True, node5, fail_node)
+# node3 = DTNode('very low or low or intermediate', False, node4, exclude_node)
+# node2 = DTNode('ICD-10',True, node3, exclude_node)
+
+# root_node = DTNode('RT consult present', True, node2, exclude_node)
+
+# current_node = root_node
+# while current_node is not None:
+#     print(current_node.name)
+#     current_node = current_node.next
+#-----------------------------------------------------------------------------
+
+
+
+# with open('decision_tree1.json', 'r') as f:
+#     decision_tree1 = json.load(f)
