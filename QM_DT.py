@@ -7,7 +7,6 @@ import csv
 import json
 
 
-our_path = 'E:/Research Projects/Complex Networks Researches/PSN Patient Similarity Network/GraphAugmentation/data'
 DB_lung = ["temp-lung-dvh",
             "washu_measures_lung_all",
             "washu_measures_lung_all_dvh_flag",
@@ -121,7 +120,7 @@ with open('decision_tree1.json', 'r') as f:
     dt2 = json.load(f)
 
 # Open the CSV file for reading
-with open(f'{our_path}/{DB_lung[0]}.csv', 'r') as csv_file:
+with open(f'Data/{DB_lung[0]}.csv', 'r') as csv_file:
     # Read the CSV data using a DictReader
     csv_reader = csv.DictReader(csv_file)
     # Convert the CSV data to a list of dictionaries
