@@ -1,5 +1,0 @@
-digraph {
-	A [label=Alice]
-	B [label=Bob]
-	A -> B
-}

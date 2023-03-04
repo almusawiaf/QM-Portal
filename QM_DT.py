@@ -135,38 +135,3 @@ for patient in json_data:
 print(results)
         
 
-
-
-
-# class DTNode:
-#     def __init__(self, name, value, yes_child=None, no_child=None):
-#         self.name = name
-#         # self.value = value
-#         if value :
-#             #every node will get an input value to handle and based on the 
-#             #results it moves to the next step.
-#             self.next = yes_child
-#         else:
-#             self.next= no_child
-
-# exclude_node = DTNode('Exclude', True)
-# fail_node = DTNode('Fail', True)
-# pass_node = DTNode('Pass', True)
-
-# node5 = DTNode('Doc Date',True, pass_node, fail_node)
-# node4 = DTNode('active surveillance documented', True, node5, fail_node)
-# node3 = DTNode('very low or low or intermediate', False, node4, exclude_node)
-# node2 = DTNode('ICD-10',True, node3, exclude_node)
-
-# root_node = DTNode('RT consult present', True, node2, exclude_node)
-
-# current_node = root_node
-# while current_node is not None:
-#     print(current_node.name)
-#     current_node = current_node.next
-#-----------------------------------------------------------------------------
-
-
-
-# with open('decision_tree1.json', 'r') as f:
-#     decision_tree1 = json.load(f)
