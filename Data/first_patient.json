@@ -1,0 +1,285 @@
+{
+    "followUp": [
+        {
+            "patientStatus": "Alive",
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Fatigue",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-10-19",
+            "diseaseProgression": "No Progression"
+        },
+        {
+            "patientStatus": "Alive",
+            "toxicity": [
+                {
+                    "grade": "No Side Effects/No Toxicities",
+                    "toxicity": "No Toxicity",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2011-04-20",
+            "diseaseProgression": "No Progression"
+        },
+        {
+            "patientStatus": "Alive",
+            "toxicity": [
+                {
+                    "grade": "No Side Effects/No Toxicities",
+                    "toxicity": "No Toxicity",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2011-10-30",
+            "diseaseProgression": "No Progression"
+        },
+        {
+            "patientStatus": "Alive",
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Hematochezia",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2012-05-03",
+            "diseaseProgression": "No Progression"
+        }
+    ],
+    "tumorType": "Prostate",
+    "adtInjections": [],
+    "clinicalTrials": [
+        {}
+    ],
+    "diagnosticImaging": {
+        "boneDensityAssessment": "No",
+        "boneScan": "Yes",
+        "mri": "Yes",
+        "ctDate": "2009-11-17",
+        "boneScanDate": "2009-11-10",
+        "boneScanType": "Tc-99m",
+        "ct": "Yes"
+    },
+    "caseId": "672-Prostate-20",
+    "diagnosis": {
+        "recurrentDisease": "No",
+        "psa": [
+            {
+                "psaScore": 5.21
+            }
+        ],
+        "tumorType": "Prostate",
+        "previousSurgery": "No",
+        "tStage": "T1c",
+        "mStage": "M0",
+        "gleasonScore": {
+            "totalGS": 7
+        },
+        "nccnRiskCategory": "Intermediate",
+        "nStage": "N0",
+        "icdCode": "185"
+    },
+    "consult": [
+        {
+            "discussedTreatmentOptions": [
+                "ADT",
+                "External Beam RT",
+                "Interstitial Prostate Brachytherapy",
+                "Radical Prostatectomy"
+            ],
+            "visitDate": "2010-01-01",
+            "adtDuration": "Short Term",
+            "qualityOfLife": []
+        }
+    ],
+    "treatmentSummary": [
+        {
+            "otherInformation": {
+                "dailyTargetLocalization": "Fiducial markers with cone beam CT",
+                "dateOfSimulation": "2010-02-01",
+                "isSimNote": "Yes",
+                "immbolizationMethods": "Bound feet",
+                "dvhAnalysisPerformed": "Yes",
+                "dvhStructuresEvaluated": [
+                    "PTV",
+                    "Bladder",
+                    "Rectum"
+                ]
+            },
+            "ebrt": [
+                {
+                    "startDate": "2010-05-19",
+                    "endDate": "2010-07-21",
+                    "wholePelvis": "No",
+                    "prescriptionDose": 79.2,
+                    "treatmentStatus": "Completed",
+                    "numberOfPlannedFractions": 44,
+                    "modality": "IMRT"
+                }
+            ]
+        }
+    ],
+    "otv": [
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "No Side Effects/No Toxicities",
+                    "toxicity": "No Toxicity",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-05-25",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Fatigue",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-05-31",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Fatigue",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-06-07",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Fatigue",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-06-14",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Fatigue",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-06-21",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Urgency",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-06-27",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Hematuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Hematochezia",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-07-05",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-07-12",
+            "qualityOfLife": {}
+        },
+        {
+            "performanceStatus": {},
+            "toxicity": [
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Other GI",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Dysuria",
+                    "system": "Not Stated"
+                },
+                {
+                    "grade": "Not Stated",
+                    "toxicity": "Fatigue",
+                    "system": "Not Stated"
+                }
+            ],
+            "visitDate": "2010-07-19",
+            "qualityOfLife": {}
+        }
+    ]
+}

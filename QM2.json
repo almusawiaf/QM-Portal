@@ -1,0 +1,65 @@
+[
+    {
+        "name": "RT Treatment Present",
+        "Node_ID": 1,
+        "feature": "",
+        "success_features": [],
+        "fail_features": [],
+        "yes_child": 2,
+        "no_child": 101
+    },
+    {
+        "name": "ICD-10 = Prostate Cancer",
+        "Node_ID": 2,
+        "feature": "",
+        "success_features": [],
+        "fail_features": [],
+        "yes_child": 3,
+        "no_child": 101
+    },
+    {
+        "name": "RT to the Primary Site",
+        "Node_ID": 3,
+        "feature": "",
+        "success_features": [],
+        "fail_features": [],
+        "yes_child": 4,
+        "no_child": 101
+    },
+    {
+        "name": "High OR Very High-Risk",
+        "Node_ID": 4,
+        "feature": "",
+        "success_features": [],
+        "fail_features": [],
+        "yes_child": 5,
+        "no_child": 101
+    },
+    {
+        "name": "Post Prostatectomy",
+        "Node_ID": 5,
+        "feature": "",
+        "success_features": [],
+        "fail_features": [],
+        "yes_child": 6,
+        "no_child": 101
+    },
+    {
+        "name": "Bone Imaging",
+        "Node_ID": 6,
+        "feature": "",
+        "success_features": [],
+        "fail_features": [],
+        "yes_child": 7,
+        "no_child": 100
+    },
+    {
+        "name": "Imaging date < RT Start date",
+        "Node_ID": 7,
+        "feature": "",
+        "success_features": [],
+        "fail_features": [],
+        "yes_child": 99,
+        "no_child": 100
+    }
+]

@@ -1,0 +1,667 @@
+{
+    "_id": {
+        "$binary": {
+            "base64": "NWQ2MDZlOWU3OTVlNjVkMjQ1YTZkY2Yz",
+            "subType": "00"
+        }
+    },
+    "vha_id": "506-Prostate-01",
+    "cancer_type": "Prostate",
+    "center_id": "506",
+    "center_name": "Ann Arbor",
+    "disease": "prostate",
+    "clinical": {
+        "caseId": "506-Prostate-01",
+        "tumorType": "Prostate",
+        "activeMeds": {},
+        "insurance": {},
+        "problemList": [
+            {
+                "description": "Cancer of prostate",
+                "SCT": "SCT 399068003",
+                "ICD": "ICD-10-CM C61."
+            },
+            {
+                "description": "Open-angle glaucoma - borderline",
+                "SCT": "SCT 193533000",
+                "ICD": "ICD-10-CM H40.003"
+            },
+            {
+                "description": "Regular astigmatism",
+                "SCT": "SCT 68905002",
+                "ICD": "ICD-10-CM H52.223"
+            },
+            {
+                "description": "Myopia",
+                "SCT": "SCT 57190000",
+                "ICD": "ICD-10-CM H52.13"
+            },
+            {
+                "description": "Presbyopia",
+                "SCT": "SCT 41256004",
+                "ICD": "ICD-10-CM H52.4"
+            },
+            {
+                "description": "Type 2 diabetes mellitus without complication",
+                "SCT": "SCT 313436004",
+                "ICD": "ICD-10-CM E11.9"
+            },
+            {
+                "description": "Depressive disorder",
+                "SCT": "SCT 35489007",
+                "ICD": "ICD-10-CM F32.8"
+            },
+            {
+                "description": "Depressive disorder",
+                "SCT": "SCT 35489007",
+                "ICD": "ICD-10-CM F32.8"
+            },
+            {
+                "description": "Body mass index 30+ - obesity",
+                "SCT": "SCT 162864005",
+                "ICD": "ICD-9-CM 278.00"
+            },
+            {
+                "description": "Type 2 diabetes mellitus without complication",
+                "SCT": "SCT 313436004",
+                "ICD": "ICD-10-CM E11.9"
+            },
+            {
+                "description": "Nuclear sclerotic cataract",
+                "SCT": "SCT 359766000",
+                "ICD": "ICD-10-CM H25.13"
+            },
+            {
+                "description": "Gout",
+                "SCT": "SCT 90560007",
+                "ICD": "ICD-9-CM 274.9"
+            },
+            {
+                "description": "Cerebrovascular accident",
+                "SCT": "SCT 230690007",
+                "ICD": "ICD-9-CM 436."
+            },
+            {
+                "description": "Depressive disorder",
+                "SCT": "SCT 35489007",
+                "ICD": "ICD-10-CM I25.10"
+            },
+            {
+                "description": "Diabetes mellitus type 2",
+                "SCT": "SCT 44054006",
+                "ICD": "ICD-10-CM E11.65"
+            },
+            {
+                "description": "Coronary arteriosclerosis",
+                "SCT": "SCT 53741008",
+                "ICD": "ICD-9-CM 414.00"
+            },
+            {
+                "description": "Vitamin D deficiency",
+                "ICD": "ICD-9-CM 268.9"
+            },
+            {
+                "description": "Ocular hypertension",
+                "ICD": "ICD-9-CM 365.04"
+            },
+            {
+                "description": "Hypercholesterolemia",
+                "ICD": "ICD-9-CM 272.4"
+            },
+            {
+                "description": "Sensory neuropathy",
+                "SCT": "SCT 95662005",
+                "ICD": "ICD-9-CM 356.9"
+            },
+            {
+                "description": "Raised prostate specific antigen",
+                "ICD": "ICD-9-CM 790.93"
+            }
+        ],
+        "patientDemographics": {
+            "ageAtDiagnosis": 68,
+            "dataOfDeath": "",
+            "ethnicity": "NOT HISPANIC OR LATINO",
+            "race": "WHITE",
+            "gender": "MALE",
+            "weight": 222.3,
+            "height": 65.5,
+            "zipCode": "00000"
+        },
+        "consult": [
+            {
+                "visitDate": "2010-01-01",
+                "qualityOfLife": [
+                    {
+                        "qualityOfLifeInstrument": "IPSS",
+                        "qualityOfLifeScore": 16
+                    },
+                    {
+                        "qualityOfLifeInstrument": "IIEF/SHIM",
+                        "qualityOfLifeScore": 8
+                    }
+                ],
+                "performanceStatus": [
+                    {
+                        "performanceInstrument": "ZUBROD",
+                        "performanceScore": 0
+                    }
+                ],
+                "adtDuration": "Long Term",
+                "discussedTreatmentOptions": [
+                    "External Beam RT",
+                    "ADT",
+                    "Radical Prostatectomy"
+                ]
+            }
+        ],
+        "otv": [
+            {
+                "visitDate": "2010-04-01",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-04-07",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-04-14",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-04-21",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-04-28",
+                "toxicity": [
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Fatigue",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Erectile dysfunction",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-05-04",
+                "toxicity": [
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Fatigue",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Erectile dysfunction",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-05-12",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Erectile dysfunction",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Fatigue",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-05-19",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Fatigue",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Erectile dysfunction",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-05-26",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Nocturia",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Fatigue",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Erectile dysfunction",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            },
+            {
+                "visitDate": "2010-06-01",
+                "toxicity": [
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Fatigue",
+                        "system": "Not Stated"
+                    },
+                    {
+                        "grade": "Not Stated",
+                        "toxicity": "Other Toxicity",
+                        "system": "Not Stated"
+                    }
+                ],
+                "qualityOfLife": {},
+                "performanceStatus": {}
+            }
+        ],
+        "followUp": [
+            {
+                "visitDate": "2010-08-04",
+                "patientStatus": "Alive",
+                "diseaseProgression": "No Progression",
+                "toxicity": [
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Erectile dysfunction",
+                        "system": "CTCAE"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Fatigue",
+                        "system": "CTCAE"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "CTCAE"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "CTCAE"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "CTCAE"
+                    }
+                ],
+                "qualityOfLife": [
+                    {
+                        "qualityOfLifeInstrument": "IIEF/SHIM",
+                        "qualityOfLifeScore": 7.0
+                    },
+                    {
+                        "qualityOfLifeInstrument": "IPSS",
+                        "qualityOfLifeScore": 6.0
+                    }
+                ]
+            },
+            {
+                "visitDate": "2010-11-01",
+                "patientStatus": "Alive",
+                "diseaseProgression": "No Progression",
+                "toxicity": [
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Acute GI",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Acute GU",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Fatigue",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 0",
+                        "toxicity": "Erectile dysfunction",
+                        "system": "RTOG"
+                    },
+                    {
+                        "grade": "Grade 1",
+                        "toxicity": "Other Toxicity",
+                        "system": "RTOG"
+                    }
+                ],
+                "qualityOfLife": [
+                    {
+                        "qualityOfLifeInstrument": "IPSS",
+                        "qualityOfLifeScore": 14.0
+                    },
+                    {
+                        "qualityOfLifeInstrument": "IIEF/SHIM",
+                        "qualityOfLifeScore": 1.0
+                    }
+                ]
+            }
+        ],
+        "clinicalTrials": [
+            {
+                "trialNumber": "11110924",
+                "enrollmentDate": "2010-01-30",
+                "enrollmentStatus": "Yes"
+            }
+        ],
+        "diagnosis": {
+            "tumorType": "Prostate",
+            "icdCode": "C61",
+            "recurrentDisease": "No",
+            "previousSurgery": "No",
+            "tStage": "T2a",
+            "nStage": "NX",
+            "mStage": "MX",
+            "gleasonScore": {
+                "primaryGS": 4,
+                "secondaryGS": 4,
+                "totalGS": 8
+            },
+            "psa": [
+                {
+                    "psaScore": 23.0
+                }
+            ],
+            "nccnRiskCategory": "High"
+        },
+        "adtInjections": [
+            {
+                "adtInjectionDose": 22.5,
+                "adtInjectionDate": "2010-01-29"
+            },
+            {
+                "adtInjectionDose": 22.5,
+                "adtInjectionDate": "2010-04-29"
+            },
+            {
+                "adtInjectionDose": 45.0,
+                "adtInjectionDate": "2010-08-04"
+            }
+        ],
+        "diagnosticImaging": {
+            "boneDensityAssessment": "No",
+            "boneScanType": "Tc-99m",
+            "boneScanDate": "2009-12-11",
+            "boneScan": "Yes",
+            "ctDate": "2009-12-21",
+            "ct": "Yes",
+            "mriDate": "2009-09-06",
+            "mri": "Yes"
+        },
+        "treatmentSummary": [
+            {
+                "ebrt": [
+                    {
+                        "modality": "IMRT",
+                        "wholePelvis": "Yes",
+                        "prescriptionDose": 45.0,
+                        "numberOfPlannedFractions": 25,
+                        "startDate": "2010-03-26",
+                        "endDate": "2010-04-30",
+                        "treatmentStatus": "Completed"
+                    },
+                    {
+                        "modality": "IMRT",
+                        "wholePelvis": "No",
+                        "prescriptionDose": 34.2,
+                        "numberOfPlannedFractions": 19,
+                        "startDate": "2010-05-01",
+                        "endDate": "2010-05-28",
+                        "treatmentStatus": "Completed"
+                    }
+                ],
+                "otherInformation": {
+                    "dateOfSimulation": "2010-03-04",
+                    "dvhAnalysisPerformed": "Yes",
+                    "dailyTargetLocalization": "Fiducial markers with portal imaging",
+                    "immbolizationMethods": "Bound feet",
+                    "isSimNote": "Yes",
+                    "dvhStructuresEvaluated": [
+                        "PTV",
+                        "Bladder",
+                        "Rectum"
+                    ]
+                }
+            }
+        ]
+    },
+    "dvh_values": {
+        "vha_id": "506-Prostate-01",
+        "center_name": "Ann Arbor",
+        "center_id": 506,
+        "cancer_type": "Prostate",
+        "Bladder_V65Gy": 26.5280523,
+        "Bladder_V70Gy": 21.73863464,
+        "Femur_L_V50Gy": 1.340001394,
+        "Femur_R_V50Gy": 0.625178419,
+        "PTV_D2%": 105.692459,
+        "PTV_V100% Rx1": 100.0,
+        "Rectum_V50Gy": 32.21420256,
+        "Rectum_V69Gy": 13.48079162,
+        "Rectum_V70Gy_15": 12.62863795,
+        "Rectum_V70Gy_25": 12.62863795,
+        "Rectum_V75Gy": 8.959254948,
+        "LargeBowel_D0_035cc": null,
+        "LargeBowel_DMax": null,
+        "Bladder - Bladder_Subtraction_Structure (Bladder - Bladder_Subtraction_Structure)_V40Gy": null,
+        "Bladder - Bladder_Subtraction_Structure (Bladder - Bladder_Subtraction_Structure)_V65Gy": null,
+        "Bladder_Already_Subtracted_V40Gy": null,
+        "Bladder_Already_Subtracted_V65Gy": null,
+        "Rectum_V40Gy": null,
+        "Rectum_V65Gy": null,
+        "SmallBowel_D0_035cc": null,
+        "SmallBowel_DMax": null,
+        "SmallBowel_V45Gy": null
+    }
+}
