@@ -1,27 +1,60 @@
-[
-    {
-        "featureID": "1",
-        "yes_child": "exclude",
-        "no_child": "2"
-    },
-    {
-        "featureID": "2",
-        "yes_child": "3",
-        "no_child": "fail"
-    },
-    {
-        "featureID": "3",
-        "yes_child": "4",
-        "no_child": "fail"
-    },
-    {
-        "featureID": "4",
-        "yes_child": "5",
-        "no_child": "fail"
-    },
-    {
-        "featureID": "5",
-        "yes_child": "pass",
-        "no_child": "fail"
-    }
-]
+{
+    "startId": "1",
+    "nodes": [
+        {
+            "featureID": "1",
+            "type": "base",
+            "path": "diagnosis.previousSurgery",
+            "expectedValue":"No",
+            "passId": "101",
+            "failId": "2"
+        },
+        {
+            "featureID": "2",
+            "type": "base",
+            "path": "diagnosis.tStage",
+            "expectedValue":"T3",
+            "passId": "3",
+            "failId": "100"
+        },
+        {
+            "featureID": "3",
+            "type": "base",
+            "path": "diagnosis.gleasonScore.primaryGS",
+            "expectedValue":"4",
+            "passId": "4",
+            "failId": "100"
+        },
+        {
+            "featureID": "4",
+            "type": "base",
+            "path": "diagnosis.gleasonScore.secondaryGS",
+            "expectedValue":"",
+            "passId": "5",
+            "failId": "100"
+        },
+        {
+            "featureID": "5",
+            "type": "base",
+            "path": "diagnosis.gleasonScore.totalGS",
+            "expectedValue":"",
+            "passId": "99",
+            "failId": "100"
+        },
+        {
+            "featureID": "99",
+            "type": "end",
+            "result": "pass"
+        },
+        {
+            "featureID": "100",
+            "type": "end",
+            "result": "fail"
+        },
+        {
+            "featureID": "101",
+            "type": "end",
+            "result": "exclude"
+        }
+    ]
+}
