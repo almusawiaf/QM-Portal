@@ -6,6 +6,8 @@
             "type": "base",
             "path": "diagnosis.previousSurgery",
             "expectedValue":"No",
+            "successValues":["No", "no"],
+            "failValues":["Yes", "yes"],
             "passId": "101",
             "failId": "2"
         },
@@ -14,6 +16,8 @@
             "type": "base",
             "path": "diagnosis.tStage",
             "expectedValue":"T3",
+            "successValues":["T3"],
+            "failValues":[],
             "passId": "3",
             "failId": "100"
         },
@@ -22,6 +26,8 @@
             "type": "base",
             "path": "diagnosis.gleasonScore.primaryGS",
             "expectedValue":"4",
+            "successValues":["4"],
+            "failValues":[],
             "passId": "4",
             "failId": "100"
         },
@@ -30,6 +36,8 @@
             "type": "base",
             "path": "diagnosis.gleasonScore.secondaryGS",
             "expectedValue":"",
+            "successValues":[],
+            "failValues":[],
             "passId": "5",
             "failId": "100"
         },
@@ -38,6 +46,8 @@
             "type": "base",
             "path": "diagnosis.gleasonScore.totalGS",
             "expectedValue":"",
+            "successValues":[],
+            "failValues":[],
             "passId": "99",
             "failId": "100"
         },
