@@ -5,51 +5,67 @@
             "featureID": "1",
             "type": "base",
             "path": "diagnosis.previousSurgery",
-            "expectedValue":"No",
-            "successValues":["No", "no"],
-            "failValues":["Yes", "yes"],
-            "passId": "101",
-            "failId": "2"
+
+            "featureType":"YesNo",
+            "successValues":["Yes"],
+            
+            "YesBranchID": "101",
+            "NoBranchID": "2"
         },
         {
             "featureID": "2",
             "type": "base",
             "path": "diagnosis.tStage",
-            "expectedValue":"T3",
+
+            "featureType":"YesNo",
             "successValues":["T3"],
-            "failValues":[],
-            "passId": "3",
-            "failId": "100"
+
+            "YesBranchID": "3",
+            "NoBranchID": "100"
         },
         {
             "featureID": "3",
             "type": "base",
             "path": "diagnosis.gleasonScore.primaryGS",
-            "expectedValue":"4",
+
+            "featureType":"YesNo",
             "successValues":["4"],
-            "failValues":[],
-            "passId": "4",
-            "failId": "100"
+
+            "YesBranchID": "4",
+            "NoBranchID": "100"
         },
         {
             "featureID": "4",
             "type": "base",
             "path": "diagnosis.gleasonScore.secondaryGS",
-            "expectedValue":"",
+
+            "featureType":"YesNo",
             "successValues":[],
-            "failValues":[],
-            "passId": "5",
-            "failId": "100"
+
+            "YesBranchID": "5",
+            "NoBranchID": "100"
         },
         {
             "featureID": "5",
             "type": "base",
             "path": "diagnosis.gleasonScore.totalGS",
-            "expectedValue":"",
+ 
+            "featureType":"YesNo",
             "successValues":[],
-            "failValues":[],
-            "passId": "99",
-            "failId": "100"
+
+            "YesBranchID": "99",
+            "NoBranchID": "100"
+        },
+        {
+            "featureID": "2",
+            "type": "base",
+            "path": "diagnosis.tStage",
+
+            "featureType":"YesNo",
+            "successValues":["T3"],
+
+            "YesBranchID": "3",
+            "NoBranchID": "100"
         },
         {
             "featureID": "99",
