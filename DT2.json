@@ -4,67 +4,45 @@
         {
             "featureID": "1",
             "type": "base",
-            "path": "diagnosis.previousSurgery",
+            "path": "diagnosis.tumorType",
 
-            "featureType":"YesNo",
-            "successValues":["Yes"],
+            "featureType":"HasAValue",
+            "successValues":"",
             
-            "YesBranchID": "101",
-            "NoBranchID": "2"
+            "YesBranchID": "2",
+            "NoBranchID": "101"
         },
         {
             "featureID": "2",
             "type": "base",
-            "path": "diagnosis.tStage",
+            "path": "diagnosis.tumorType",
 
-            "featureType":"HasAValue",
-            "successValues":"",
+            "featureType":"InAList",
+            "successValues":["Prostate"],
 
             "YesBranchID": "3",
-            "NoBranchID": "100"
+            "NoBranchID": "101"
         },
         {
             "featureID": "3",
             "type": "base",
-            "path": "diagnosis.gleasonScore.primaryGS",
+            "path": "diagnosis.nccnRiskCategory",
 
-            "featureType":"HasAValue",
-            "successValues":"",
+            "featureType":"InAList",
+            "successValues":["High", "Very High"],
 
             "YesBranchID": "4",
-            "NoBranchID": "100"
+            "NoBranchID": "101"
         },
         {
             "featureID": "4",
             "type": "base",
-            "path": "diagnosis.gleasonScore.secondaryGS",
+            "path": "diagnosticImaging.boneScan",
 
-            "featureType":"HasAValue",
-            "successValues":"",
-
-            "YesBranchID": "5",
-            "NoBranchID": "100"
-        },
-        {
-            "featureID": "5",
-            "type": "base",
-            "path": "diagnosis.gleasonScore.totalGS",
- 
-            "featureType":"HasAValue",
-            "successValues":"",
+            "featureType":"YesNo",
+            "successValues":"Yes",
 
             "YesBranchID": "99",
-            "NoBranchID": "100"
-        },
-        {
-            "featureID": "2",
-            "type": "base",
-            "path": "diagnosis.tStage",
-
-            "featureType":"HasAValue",
-            "successValues":"",
-
-            "YesBranchID": "3",
             "NoBranchID": "100"
         },
         {
