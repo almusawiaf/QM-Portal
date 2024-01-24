@@ -1,0 +1,92 @@
+{
+  "startId": "1",
+  "nodes": [
+    {
+      "featureID": "1",
+      "type": "InAList",
+      "path": "presentOncologic.radiotherapy",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "7",
+      "NoBranchID": "101"
+    },
+    {
+      "featureID": "2",
+      "type": "InAList",
+      "path": "diagnosis",
+      "successValues": ["Prostate", "Prostate Cancer"],
+      "excludeValues": [],
+      "YesBranchID": "3",
+      "NoBranchID": "101"
+    },
+    {
+      "featureID": "3",
+      "type": "InAList",
+      "path": "patientSelectedTreatment.definitive",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "4",
+      "NoBranchID": "101"
+    },
+    {
+      "featureID": "4",
+      "type": "InAList",
+      "path": "TNMStaging.nccnRiskGroup",
+      "successValues": ["High", "Very High"],
+      "excludeValues": [],
+      "YesBranchID": "4",
+      "NoBranchID": "101"
+    },
+    {
+      "featureID": "5",
+      "type": "InAList",
+      "path": "presentOncologic.prostatectomy.performed",
+
+      "successValues": [true],
+      "excludeValues": [],
+
+      "YesBranchID": "101",
+      "NoBranchID": "6"
+    },
+    {
+      "featureID": "6",
+      "type": "InAList",
+      "path": "boneScan.performed",
+
+      "successValues": [true],
+      "excludeValues": [],
+
+      "YesBranchID": "7",
+      "NoBranchID": "100"
+    },
+    {
+      "featureID": "7",
+      "type": "TwoDates",
+      "path": "",
+
+      "successValues": ["boneScan.date.$date.$numberLong", "boneScan.date.$date.$numberLong"],
+      "excludeValues": [],
+
+      "YesBranchID": "99",
+      "NoBranchID": "100"
+    },
+
+
+
+    {
+      "featureID": "99",
+      "type": "end",
+      "result": "pass"
+    },
+    {
+      "featureID": "100",
+      "type": "end",
+      "result": "fail"
+    },
+    {
+      "featureID": "101",
+      "type": "end",
+      "result": "exclude"
+    }
+  ]
+}

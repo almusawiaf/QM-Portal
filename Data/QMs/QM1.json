@@ -1,0 +1,120 @@
+{
+    "startId": "1",
+    "nodes": [
+        {
+            "featureID": "1",
+            "type": "InAList",
+            "path": "presentOncologic.radiotherapy",
+            "successValues":[true],    
+            "excludeValues":[],        
+            "YesBranchID": "2",
+            "NoBranchID": "101"
+        },
+        {
+            "featureID": "2",
+            "type": "InAList",
+            "path": "diagnosis",
+            "successValues":["Prostate", "Prostate Cancer"],
+            "excludeValues":[],        
+            "YesBranchID": "3",
+            "NoBranchID": "101"
+        },
+        {
+            "featureID": "3",
+            "type": "HasAValue",
+            "path": "TNMStaging.TNM",
+            "successValues":[],
+            "excludeValues":["M1a", "M1b", "M1c"], 
+            "YesBranchID": "4",
+            "NoBranchID": "101"
+        },
+        {
+            "featureID": "4",
+            "type": "InAList",
+            "path": "patientSelectedTreatment.palliative",
+            "successValues":[false],
+            "excludeValues":[],        
+            "YesBranchID": "101",
+            "NoBranchID": "5"
+        },
+        {
+            "featureID": "5",
+            "type": "HasAValue",
+            "path": "primaryPSA.value",
+            "successValues":[],
+            "excludeValues":[],        
+            "YesBranchID": "6",
+            "NoBranchID": "100"
+        },
+        {
+            "featureID": "6",
+            "type": "HasAValue",
+            "path": "presentOncologic.biopsies.gleason.primary",
+            "successValues":[],
+            "excludeValues":[],        
+            "YesBranchID": "7",
+            "NoBranchID": "8"
+        },
+        {
+            "featureID": "7",
+            "type": "HasAValue",
+            "path": "presentOncologic.biopsies.gleason.secondary",
+            "successValues":[],
+            "excludeValues":[],        
+            "YesBranchID": "9",
+            "NoBranchID": "8"
+        },
+        {
+            "featureID": "8",
+            "type": "HasAValue",
+            "path": "presentOncologic.biopsies.gleason.gleasonGradeGroup",
+            "successValues":[],
+            "excludeValues":[],        
+            "YesBranchID": "9",
+            "NoBranchID": "100"
+        },
+        {
+            "featureID": "9",
+            "type": "HasAValue",
+            "path": "TNMStaging.nccnRiskGroup",
+            "successValues":[],
+            "excludeValues":[],        
+            "YesBranchID": "10",
+            "NoBranchID": "100"
+        },
+        {
+            "featureID": "10",
+            "type": "HasAValue",
+            "path": "presentOncologic.nodalStaging.method",
+            "successValues":[],
+            "excludeValues":[],        
+            "YesBranchID": "11",
+            "NoBranchID": "100"
+        },
+        {
+            "featureID": "11",
+            "type": "HasAValue",
+            "path": "signedOn.$date.$numberLong",
+            "successValues":[],
+            "excludeValues":[],        
+            "YesBranchID": "99",
+            "NoBranchID": "100"
+        },
+        
+        {
+            "featureID": "99",
+            "type": "end",
+            "result": "pass"
+        },
+        {
+            "featureID": "100",
+            "type": "end",
+            "result": "fail"
+        },
+        {
+            "featureID": "101",
+            "type": "end",
+            "result": "exclude"
+        }
+    ]
+}

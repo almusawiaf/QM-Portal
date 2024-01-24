@@ -1,0 +1,843 @@
+{
+    "_id": {
+      "$oid": "641c6fb7bf1f7b9307dc49d3"
+    },
+    "__t": "ProstateConsultNote",
+    "caseId": {
+      "$oid": "641c6fb6bf1f7b9307dc49c1"
+    },
+    "TNMStaging": {
+      "TNM": "cT1cNxM0",
+      "staging": "",
+      "nccnRiskGroup": "",
+      "groupStage": "IIA"
+    },
+    "__v": 0,
+    "adtIntent": "",
+    "assessment": "",
+    "biopsyInfo": "",
+    "biopsySelection": "none",
+    "boneDensityAssessment": {
+      "status": "",
+      "results": ""
+    },
+    "boneScan": {
+      "status": "",
+      "results": "",
+      "type": ""
+    },
+    "chiefComplaint": "Prostate Cancer",
+    "clinical": {
+      "clinicalOptions": "",
+      "clinicalDescription": ""
+    },
+    "comorbidConditions": {
+      "cardiacImplant": null
+    },
+    "consent": false,
+    "description": "",
+    "diagnosis": "Prostate Cancer",
+    "diseaseSite": "prostate",
+    "dre": "",
+    "dreDescription": "",
+    "ecog": "",
+    "fractionation": "",
+    "generatedBiopsyInfo": "Gleason Information\n      Primary: null\n      Secondary: null\n      Grade: 0\n      Positive Cores: null\n      Total Cores: null\nStaging Information\n      TNM: cT1cNxM0\n      NCCN Risk Group: \n      Stage Grouping: IIA\n      Staging Completed: \nHistology: Adenocarcinoma\nPSA: ",
+    "histology": "Adenocarcinoma",
+    "historyPresentIllness": "",
+    "includeAllPsaInNote": true,
+    "includeBloodCount": true,
+    "includeLiverLabs": true,
+    "includeRenalLabs": true,
+    "intent": "",
+    "kps": "",
+    "kpsEcogOption": "",
+    "kpsEcogScore": "",
+    "labDescription": "",
+    "liveDocument": [
+      {
+        "name": "consultGeneral",
+        "data": [
+          {
+            "path": "chiefComplaint",
+            "type": "input"
+          },
+          {
+            "paths": [
+              null,
+              "diagnosis",
+              "histology"
+            ],
+            "type": "template",
+            "text": "Diagnosis: Prostate Cancer\nHistology: Adenocarcinoma \n "
+          },
+          {
+            "path": "TNMStaging.TNM",
+            "type": "input"
+          },
+          {
+            "path": "TNMStaging.groupStage",
+            "type": "input"
+          },
+          {
+            "path": "TNMStaging.nccnRiskGroup",
+            "type": "input"
+          },
+          {
+            "path": "TNMStaging.staging",
+            "type": "input"
+          }
+        ]
+      },
+      {
+        "name": "consultOncologic",
+        "data": [
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [
+              null,
+              "presentOncologic.molecularTesting.date",
+              "presentOncologic.molecularTesting.description"
+            ],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [
+              null
+            ],
+            "type": "template",
+            "text": "PSA Scores:\n    5.3     05/17/2020\n"
+          },
+          {
+            "path": "presentOncologic.stagingDescription",
+            "type": "input"
+          },
+          {
+            "paths": [
+              "presentOncologic.prostatectomy.involvedMargin",
+              "presentOncologic.prostatectomy.ece",
+              "presentOncologic.prostatectomy.svi",
+              "presentOncologic.prostatectomy.date",
+              "presentOncologic.prostatectomy.primary",
+              "presentOncologic.prostatectomy.secondary"
+            ],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [
+              "brachytherapy.date",
+              "externalBeam.treatment",
+              "externalBeam.endDate",
+              "radiotherapy"
+            ],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "path": "presentOncologic.historyPresentIllness",
+            "type": "input"
+          }
+        ]
+      },
+      {
+        "name": "consultComorbidities",
+        "data": [
+          {
+            "paths": [
+              null,
+              "comorbidConditions.inflammatoryBowelDisease",
+              "comorbidConditions.collagenVascularDisease",
+              "comorbidConditions.cardiovascularDisease",
+              "comorbidConditions.psychiatricDisease"
+            ],
+            "type": "template",
+            "text": "The patient does not presented with relevant treatment considerations."
+          },
+          {
+            "path": "comorbidConditions.additionalDetailstreatment",
+            "type": "input"
+          },
+          {
+            "path": "comorbidConditions.cardiacImplant",
+            "type": "input"
+          }
+        ]
+      },
+      {
+        "name": "consultPriorOncologic",
+        "data": [
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "name": "consultPastHistories",
+        "data": [
+          {
+            "paths": [
+              null,
+              "pastMedicalHistory"
+            ],
+            "type": "template",
+            "text": "Past Medical History:\n1) Acute Low Back Pain (SCT 278862001), Date of Onset: \n2) Gastroesophageal Reflux Disease Without Esophagitis (SCT 266435005), Date of Onset: \n\n "
+          },
+          {
+            "paths": [
+              null,
+              "pastSurgicalHistory"
+            ],
+            "type": "template",
+            "text": "Past Surgical History:\n1) undefined, Report Title: OPERATION REPORT, Date: undefined\n2) undefined, Report Title: NURSE INTRAOPERATIVE REPORT, Date: undefined\n3) undefined, Report Title: ANESTHESIA REPORT, Date: undefined\n\n "
+          },
+          {
+            "paths": [
+              null,
+              "militaryHistory"
+            ],
+            "type": "template",
+            "text": "Military History:\n1) HONORABLE Discharge, Entered: 7/7/1968, Separated: 4/2/1978, Service Branch: ARMY\n2) HONORABLE Discharge, Entered: 5/3/1992, Separated: 5/9/1999, Service Branch: NAVY\n\n "
+          },
+          {
+            "paths": [
+              null,
+              "allergies"
+            ],
+            "type": "template",
+            "text": "Allergies:\n1) No Allergy Assessment\nReaction Symptoms: \nSeverity: \n\n\n "
+          },
+          {
+            "paths": [
+              null,
+              "activeMedication"
+            ],
+            "type": "template",
+            "text": "Active Medication:\n\n "
+          }
+        ]
+      },
+      {
+        "name": "consultSocialHistory",
+        "data": [
+          {
+            "path": "socialHistory.family.maritalStatus",
+            "type": "input"
+          },
+          {
+            "paths": [
+              null,
+              "socialHistory.alcohol.drinksPerWeek",
+              "socialHistory.smoking.years",
+              "socialHistory.smoking.description",
+              "socialHistory.smoking.packRate",
+              "socialHistory.smoking.unit",
+              "socialHistory.smoking.status",
+              "socialHistory.alcohol.status"
+            ],
+            "type": "template",
+            "text": "The patient does not smoke or drink."
+          },
+          {
+            "path": "socialHistory.recreationalDrugs.used",
+            "type": "input"
+          },
+          {
+            "path": "socialHistory.recreationalDrugs.history",
+            "type": "input"
+          },
+          {
+            "path": "socialHistory.freeText",
+            "type": "input"
+          },
+          {
+            "path": "socialHistory.hazardousMaterialExposure",
+            "type": "input"
+          },
+          {
+            "path": "family.cancerCaseDescription",
+            "type": "input"
+          }
+        ]
+      },
+      {
+        "name": "rosAll",
+        "data": [
+          {
+            "paths": [
+              null,
+              "weight.weightChangeValue",
+              "weight.unit",
+              "weight.dateRange",
+              "weight.customWeightDate",
+              "weight.weightChangeValue",
+              "weight.unit",
+              "weight.customWeightDate",
+              "weight.dateRange",
+              "weight.weightChangeDirection"
+            ],
+            "type": "template",
+            "text": "The patient has gained 11 lbs in the last 3 months."
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "name": "examGeneral",
+        "data": [
+          {
+            "paths": [
+              null,
+              "painScore"
+            ],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [
+              null,
+              "kps"
+            ],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [
+              null,
+              "ecog"
+            ],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [
+              null
+            ],
+            "type": "template",
+            "text": "Digital Rectal Exam: "
+          },
+          {
+            "path": "systemicTherapy.dredesc",
+            "type": "input"
+          },
+          {
+            "path": "physicalExam",
+            "type": "input"
+          }
+        ]
+      },
+      {
+        "name": "examDiagnostic",
+        "data": [
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          },
+          {
+            "paths": [],
+            "type": "template",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "name": "vitals",
+        "data": [
+          {
+            "paths": [
+              null
+            ],
+            "type": "template",
+            "text": "Blood pressure: 102 / 71           Date: 4/28/2017\nHeart rate: 101                    Date: 11/12/2020\nRespiratory rate: 21               Date: 11/12/2020\nWeight: 126 lb                     Date: 11/18/2020\nHeight: 64 in                      Date: 4/28/2017\n"
+          }
+        ]
+      },
+      {
+        "name": "examLabs",
+        "data": [
+          {
+            "paths": [
+              null
+            ],
+            "type": "template",
+            "text": "Renal Function\nLab Test        Value     Units     Normal Range    Date        \nGFR                                                             \nUrea Nitrogen   9         mg/dL     7 - 20          09/29/2020  \nCreatinine      1.2       MG/DL     .7 - 1.4        09/29/2020  \n\nLiver Function\nLab Test        Value     Units     Normal Range    Date        \nALT             90 H                29 - 60         09/29/2020  \nAST             21        u/L       5 - 40          09/29/2020  \nALK             23        U/L       22 - 124        09/29/2020  \nBilirubin                                                       \nGGT                                                             \nLDH                                                             \nPT                                                              \nTotal Protein   6 L       g/dL      6.2 - 7.3       09/29/2020  \n\nBlood Count\nLab Test        Value     Units     Normal Range    Date        \nHCT             40        %         37 - 47         10/02/2020  \nHGB             11 L      g/dL      14.0 - 16       10/02/2020  \nMCH             27        uug       27 - 35         10/02/2020  \nMCHC            33        gm/dL     33 - 36         10/02/2020  \nMCV             83        cmu       81 - 99         10/02/2020  \nPLT             150       K/cmm     140 - 420       10/02/2020  \nRBC             5.30      M/cmm     4.2 - 5.4       10/02/2020  \nRDW             14        %         11 - 14         10/02/2020  \nWBC             6         K/cmm     3.4 - 8.3       10/02/2020  \n\nLab Result Description: "
+          }
+        ]
+      },
+      {
+        "name": "assessmentOverview",
+        "data": [
+          {
+            "path": "description",
+            "type": "input"
+          }
+        ]
+      },
+      {
+        "name": "assessmentPlanOfCare",
+        "data": [
+          {
+            "paths": [
+              null
+            ],
+            "type": "template",
+            "text": "We discussed the natural history of prostate cancer, and the options for management, including \n"
+          }
+        ]
+      },
+      {
+        "name": "clinicaltrial",
+        "data": [
+          {
+            "path": "clinical",
+            "type": "input"
+          },
+          {
+            "path": "clinicalDescription",
+            "type": "input"
+          }
+        ]
+      },
+      {
+        "name": "nextsteps",
+        "data": [
+          {
+            "paths": [
+              null
+            ],
+            "type": "template",
+            "text": "Next Steps:\nFurther Details of Plan: "
+          }
+        ]
+      },
+      {
+        "name": "assessmentAdditional",
+        "data": [
+          {
+            "path": "nutritionAssessment",
+            "type": "input"
+          },
+          {
+            "path": "smokingCessation",
+            "type": "input"
+          },
+          {
+            "path": "patientEducation",
+            "type": "input"
+          }
+        ]
+      }
+    ],
+    "medicalRationale": "",
+    "militaryHistory": "1) HONORABLE Discharge, Entered: 7/7/1968, Separated: 4/2/1978, Service Branch: ARMY\n2) HONORABLE Discharge, Entered: 5/3/1992, Separated: 5/9/1999, Service Branch: NAVY\n",
+    "molecularTesting": {
+      "type": "",
+      "description": ""
+    },
+    "nextSteps": {
+      "otherSpecific": "",
+      "selected": "",
+      "treatment": "",
+      "furtherWorkup": "",
+      "psaMonitoring": "",
+      "activeSurveillance": ""
+    },
+    "noteName": "consult",
+    "nutritionAssessment": "",
+    "painManagementDescription": "",
+    "painScore": null,
+    "pastMedicalHistory": "1) Acute Low Back Pain (SCT 278862001), Date of Onset: \n2) Gastroesophageal Reflux Disease Without Esophagitis (SCT 266435005), Date of Onset: \n",
+    "pastSurgicalHistory": "1) undefined, Report Title: OPERATION REPORT, Date: undefined\n2) undefined, Report Title: NURSE INTRAOPERATIVE REPORT, Date: undefined\n3) undefined, Report Title: ANESTHESIA REPORT, Date: undefined\n",
+    "patientEducation": "",
+    "patientSelectedTreatment": {
+      "rtTherapy": {
+        "radicalProstatectomy": false,
+        "conventionallyFractionatedEbrt": false,
+        "moderatelyHypofractionatedEbrt": false,
+        "UltraHypofractionationSbrt": false,
+        "LdrBrachytherapyMonotherapy": false,
+        "HdrBrachytherapyMonotherapy": false,
+        "CombinationEbrtBrachytherapyBoost": false,
+        "other": false,
+        "otherText": ""
+      },
+      "hormonalTherapy": {
+        "none": false,
+        "shortTerm": false,
+        "longTerm": false,
+        "androgenReceptorAxisTargetedAgent": false
+      }
+    },
+    "pelvicCt": {
+      "status": "",
+      "results": ""
+    },
+    "pelvicMri": {
+      "status": "",
+      "results": ""
+    },
+    "petCt": {
+      "status": "",
+      "results": "",
+      "type": ""
+    },
+    "physicalExam": "",
+    "presentOncologic": {
+      "prostatectomy": {
+        "primary": "",
+        "secondary": "",
+        "ece": "",
+        "svi": "",
+        "description": ""
+      },
+      "brachytherapy": {
+        "treatment": false
+      },
+      "externalBeam": {
+        "treatment": false
+      },
+      "nodalStaging": {
+        "method": "",
+        "positiveNode": "",
+        "negativeNode": "",
+        "description": ""
+      },
+      "systemicTherapy": {
+        "hormones": {
+          "performed": false,
+          "agent": ""
+        },
+        "chemotherapy": {
+          "performed": false,
+          "agent": ""
+        },
+        "performed": false,
+        "description": ""
+      },
+      "hormones": false,
+      "radiotherapy": false,
+      "radiotherapyDescription": "",
+      "biopsies": [
+        {
+          "date": {
+            "$date": "2023-02-01T00:00:00.000Z"
+          },
+          "type": "",
+          "other": "",
+          "gleason": {
+            "useInStaging": false,
+            "primary": "4",
+            "secondary": "3",
+            "tertiary": "",
+            "coresPositive": null,
+            "totalCores": null,
+            "gleasonGradeGroup": ""
+
+          }
+        }
+      ]
+    },
+    "primaryPSA": {
+      "collectionDate": "",
+      "collectionTime": "",
+      "value": "",
+      "units": "",
+      "normalRange": ""
+    },
+    "priorOncologic": [],
+    "protocol": "",
+    "qualityOfLife": [
+      {
+        "instrument": "",
+        "score": null,
+        "incompleteEmptying": null,
+        "frequency": null,
+        "intermittency": null,
+        "urgency": null,
+        "weakStream": null,
+        "straining": null,
+        "nocturia": null
+      }
+    ],
+    "recommendedTherapy": {
+      "rtTherapy": {
+        "radicalProstatectomy": false,
+        "conventionallyFractionatedEbrt": false,
+        "moderatelyHypofractionatedEbrt": false,
+        "UltraHypofractionationSbrt": false,
+        "LdrBrachytherapyMonotherapy": false,
+        "HdrBrachytherapyMonotherapy": false,
+        "CombinationEbrtBrachytherapyBoost": false,
+        "other": false,
+        "otherText": ""
+      },
+      "hormonalTherapy": {
+        "none": false,
+        "shortTerm": false,
+        "longTerm": false,
+        "androgenReceptorAxisTargetedAgent": false
+      }
+    },
+    "reviewOfSystems": {
+      "weight": {
+        "weightChangeValue": 11,
+        "unit": "lbs",
+        "changeDirection": "gain",
+        "dateRange": "3 months",
+        "customWeightDate": null
+      },
+      "general": {
+        "fatigue": 0,
+        "poorAppetite": 0,
+        "otherGeneral": ""
+      },
+      "cv": {
+        "chestPain": 0,
+        "edema": 0,
+        "otherCv": ""
+      },
+      "heent": {
+        "epistaxis": 0,
+        "hoarseness": 0,
+        "oralSores": 0,
+        "neckMasses": 0,
+        "otherHeent": ""
+      },
+      "gu": {
+        "dysuria": 0,
+        "erectileDysfunction": 0,
+        "hematuria": 0,
+        "incompleteEmptying": 0,
+        "intermittency": 0,
+        "kidneyStones": 0,
+        "nocturia": 0,
+        "straining": 0,
+        "urinaryFrequency": 0,
+        "urinaryUrgency": 0,
+        "weakStream": 0,
+        "otherGu": ""
+      },
+      "gi": {
+        "abdominalPain": 0,
+        "constipation": 0,
+        "diarrhea": 0,
+        "dyspepsia": 0,
+        "dysphagia": 0,
+        "earlySatiety": 0,
+        "fecalIncontinence": 0,
+        "hematemesis": 0,
+        "nausea": 0,
+        "odynophagia": 0,
+        "rectalBleeding": 0,
+        "rectalPain": 0,
+        "vomiting": 0,
+        "otherGi": ""
+      },
+      "pulm": {
+        "cough": 0,
+        "SOB": 0,
+        "DOE": 0,
+        "hemoptysis": 0,
+        "usingSupplementalOxygen": 0,
+        "otherPulm": ""
+      },
+      "msk": {
+        "jointPain": 0,
+        "musclePain": 0,
+        "bonePain": 0,
+        "otherMsk": ""
+      },
+      "endocrine": {
+        "hotFlashes": 0,
+        "hotIntolerance": 0,
+        "coldIntolerance": 0,
+        "otherEndocrine": ""
+      },
+      "neuro": {
+        "behavioralChanges": 0,
+        "clumsiness": 0,
+        "cognitiveChanges": 0,
+        "cranialDeficits": 0,
+        "dizziness": 0,
+        "headaches": 0,
+        "hearing": 0,
+        "motorDeficits": 0,
+        "sensoryDeficits": 0,
+        "speech": 0,
+        "vision": 0,
+        "otherNeuro": ""
+      },
+      "_id": {
+        "$oid": "6491bcda736f9046e8a2974a"
+      }
+    },
+    "smokingCessation": "",
+    "socialHistory": {
+      "smoking": {
+        "status": "",
+        "unit": "",
+        "description": ""
+      },
+      "alcohol": {
+        "status": ""
+      },
+      "recreationalDrugs": {
+        "history": ""
+      },
+      "family": {
+        "include": false,
+        "maritalStatus": "",
+        "cancerCaseDescription": ""
+      },
+      "include": false,
+      "freeText": "",
+      "hazardousMaterialExposure": ""
+    },
+    "stagingDescription": "",
+    "treatmentOptions": {
+      "description": ""
+    },
+    "treatmentOptionsPlan": {
+      "rtTherapy": {
+        "radicalProstatectomy": false,
+        "conventionallyFractionatedEbrt": false,
+        "moderatelyHypofractionatedEbrt": false,
+        "UltraHypofractionationSbrt": false,
+        "LdrBrachytherapyMonotherapy": false,
+        "HdrBrachytherapyMonotherapy": false,
+        "CombinationEbrtBrachytherapyBoost": false,
+        "other": false,
+        "otherText": ""
+      },
+      "hormonalTherapy": {
+        "none": false,
+        "shortTerm": false,
+        "longTerm": false,
+        "androgenReceptorAxisTargetedAgent": false
+      }
+    },
+    "updated": {
+      "$date": "2023-06-20T14:51:06.341Z"
+    },
+    "version": "1.0.0",
+    "visitDate": {
+      "$date": "2023-03-23T15:26:47.555Z"
+    },
+    "vitals": {
+      "bloodPressureSystolic": 102,
+      "bloodPressureDiastolic": 71,
+      "bloodPressureDate": {
+        "$date": "2017-04-29T00:00:00.000Z"
+      },
+      "heartRate": 101,
+      "heartRateDate": {
+        "$date": "2020-11-13T00:00:00.000Z"
+      },
+      "temperature": null,
+      "temperatureUnits": "F",
+      "temperatureDate": {
+        "$date": "1970-01-01T00:00:00.000Z"
+      },
+      "respiratoryRate": 21,
+      "respiratoryRateDate": {
+        "$date": "2020-11-13T00:00:00.000Z"
+      },
+      "oxygenSaturationPercent": null,
+      "litersOfOxygen": null,
+      "oxygenSaturationDate": {
+        "$date": "1970-01-01T00:00:00.000Z"
+      },
+      "weight": 126,
+      "weightUnits": "lb",
+      "weightDate": {
+        "$date": "2020-11-19T00:00:00.000Z"
+      },
+      "height": 64,
+      "heightUnits": "in",
+      "heightDate": {
+        "$date": "2017-04-29T00:00:00.000Z"
+      },
+      "updatedDate": {
+        "$date": "2023-06-20T14:29:09.065Z"
+      }
+    },
+    "histology2": "Adenocarcinoma",
+    "histology3": "Adenocarcinoma"
+  }

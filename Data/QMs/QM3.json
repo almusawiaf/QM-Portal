@@ -1,0 +1,92 @@
+{
+  "startId": "1",
+  "nodes": [
+    {
+      "featureID": "1",
+      "type": "InAList",
+      "path": "presentOncologic.radiotherapy",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "2",
+      "NoBranchID": "101"
+    },
+    {
+      "featureID": "2",
+      "type": "InAList",
+      "path": "diagnosis",
+      "successValues": ["Prostate", "Prostate Cancer"],
+      "excludeValues": [],
+      "YesBranchID": "3",
+      "NoBranchID": "101"
+    },
+    {
+      "featureID": "3",
+      "type": "InAList",
+      "path": "patientSelectedTreatment.definitive",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "4",
+      "NoBranchID": "101"
+    },
+    {
+      "featureID": "4",
+      "type": "InAList",
+      "path": "TNMStaging.nccnRiskGroup",
+      "successValues": ["High", "Very high"],
+      "excludeValues": [],
+      "YesBranchID": "101",
+      "NoBranchID": "5"
+    },
+    {
+      "featureID": "5",
+      "type": "InAList",
+      "path": "presentOncologic.prostatectomy.performed",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "101",
+      "NoBranchID": "7"
+    },
+    {
+      "featureID": "6",
+      "type": "HasAValue",
+      "path": "pelvicMri.performed",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "101",
+      "NoBranchID": "7"
+    },
+    {
+      "featureID": "7",
+      "type": "HasAValue",
+      "path": "pelvicMri.performed",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "8",
+      "NoBranchID": "100"
+    },
+    {
+      "featureID": "8",
+      "type": "HasAValue",
+      "path": "pelvicMri.date",
+      "successValues": [],
+      "excludeValues": [],
+      "YesBranchID": "99",
+      "NoBranchID": "100"
+    },
+    {
+      "featureID": "99",
+      "type": "end",
+      "result": "pass"
+    },
+    {
+      "featureID": "100",
+      "type": "end",
+      "result": "fail"
+    },
+    {
+      "featureID": "101",
+      "type": "end",
+      "result": "exclude"
+    }
+  ]
+}
