@@ -14,7 +14,7 @@
 
     {
       "featureID": "3",
-      "type": "HasAValue",
+      "type": "InAList",
       "path": "patientSelectedTreatment.definitive",
       "doEval": "",
       "successValues": [true],
@@ -25,7 +25,7 @@
 
     {
       "featureID": "5",
-      "type": "HasAValue",
+      "type": "InAList",
       "path": "sim/setupInstructions.rectum",
       "doEval": "",
       "successValues": ["Empty"],
@@ -36,7 +36,7 @@
 
     {
       "featureID": "6",
-      "type": "HasAValue",
+      "type": "InAList",
       "path": "sim/setupInstructions.bladder",
       "doEval": "",
       "successValues": ["Full"],

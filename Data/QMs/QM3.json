@@ -78,7 +78,7 @@
       "doEval": "",
 
       "successValues": [
-        "consult/pelvicMri.date",
+        "consult/pelvicMri.date.$date.$numberLong",
         "eot/treatmentDeliveries.startDate.$date.$numberLong",
         "otv/treatmentDeliveries.startDate.$date.$numberLong"
       ],
