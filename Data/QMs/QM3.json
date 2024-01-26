@@ -1,92 +1,104 @@
 {
-  "startId": "1",
+  "startId": "2",
   "nodes": [
     {
       "featureID": "1",
       "type": "InAList",
       "path": "presentOncologic.radiotherapy",
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
       "YesBranchID": "2",
-      "NoBranchID": "101"
+      "NoBranchID": "exclude"
     },
     {
       "featureID": "2",
       "type": "InAList",
       "path": "diagnosis",
+      "doEval": "",
       "successValues": ["Prostate", "Prostate Cancer"],
       "excludeValues": [],
       "YesBranchID": "3",
-      "NoBranchID": "101"
+      "NoBranchID": "exclude"
     },
     {
       "featureID": "3",
       "type": "InAList",
       "path": "patientSelectedTreatment.definitive",
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
       "YesBranchID": "4",
-      "NoBranchID": "101"
+      "NoBranchID": "exclude"
     },
     {
       "featureID": "4",
       "type": "InAList",
       "path": "TNMStaging.nccnRiskGroup",
-      "successValues": ["High", "Very high"],
+      "doEval": "",
+      "successValues": ["Low"],
       "excludeValues": [],
-      "YesBranchID": "101",
+      "YesBranchID": "exclude",
       "NoBranchID": "5"
     },
     {
       "featureID": "5",
       "type": "InAList",
       "path": "presentOncologic.prostatectomy.performed",
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
-      "YesBranchID": "101",
+      "YesBranchID": "exclude",
       "NoBranchID": "7"
     },
     {
       "featureID": "6",
       "type": "HasAValue",
       "path": "pelvicMri.performed",
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
-      "YesBranchID": "101",
+      "YesBranchID": "exclude",
       "NoBranchID": "7"
     },
     {
       "featureID": "7",
       "type": "HasAValue",
       "path": "pelvicMri.performed",
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
       "YesBranchID": "8",
-      "NoBranchID": "100"
+      "NoBranchID": "fail"
     },
     {
       "featureID": "8",
-      "type": "HasAValue",
-      "path": "pelvicMri.date",
-      "successValues": [],
+      "type": "QMDates",
+      "path": "",
+      "doEval": "",
+
+      "successValues": [
+        "pelvicMri.date",
+        "/eot/treatmentDeliveries.startDate.$date.$numberLong",
+        "/otv/treatmentDeliveries.startDate.$date.$numberLong"
+      ],
       "excludeValues": [],
-      "YesBranchID": "99",
-      "NoBranchID": "100"
+
+      "YesBranchID": "pass",
+      "NoBranchID": "fail"
+    },
+
+    {
+      "featureID": "pass",
+      "type": "end"
     },
     {
-      "featureID": "99",
-      "type": "end",
-      "result": "pass"
+      "featureID": "fail",
+      "type": "end"
     },
     {
-      "featureID": "100",
-      "type": "end",
-      "result": "fail"
-    },
-    {
-      "featureID": "101",
-      "type": "end",
-      "result": "exclude"
+      "featureID": "exclude",
+      "type": "end"
     }
   ]
 }

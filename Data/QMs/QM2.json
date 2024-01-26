@@ -1,92 +1,99 @@
 {
-  "startId": "1",
+  "startId": "7",
   "nodes": [
     {
       "featureID": "1",
       "type": "InAList",
       "path": "presentOncologic.radiotherapy",
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
-      "YesBranchID": "7",
-      "NoBranchID": "101"
+      "YesBranchID": "2",
+      "NoBranchID": "exclude"
     },
     {
       "featureID": "2",
       "type": "InAList",
       "path": "diagnosis",
+      "doEval": "",
       "successValues": ["Prostate", "Prostate Cancer"],
       "excludeValues": [],
       "YesBranchID": "3",
-      "NoBranchID": "101"
+      "NoBranchID": "exclude"
     },
     {
       "featureID": "3",
       "type": "InAList",
       "path": "patientSelectedTreatment.definitive",
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
       "YesBranchID": "4",
-      "NoBranchID": "101"
+      "NoBranchID": "exclude"
     },
     {
       "featureID": "4",
       "type": "InAList",
       "path": "TNMStaging.nccnRiskGroup",
+      "doEval": "",
       "successValues": ["High", "Very High"],
       "excludeValues": [],
       "YesBranchID": "4",
-      "NoBranchID": "101"
+      "NoBranchID": "exclude"
     },
     {
       "featureID": "5",
       "type": "InAList",
       "path": "presentOncologic.prostatectomy.performed",
 
+      "doEval": "",
       "successValues": [true],
       "excludeValues": [],
 
-      "YesBranchID": "101",
+      "YesBranchID": "exclude",
       "NoBranchID": "6"
     },
     {
       "featureID": "6",
       "type": "InAList",
       "path": "boneScan.performed",
+      "doEval": "",
 
       "successValues": [true],
       "excludeValues": [],
 
       "YesBranchID": "7",
-      "NoBranchID": "100"
+      "NoBranchID": "fail"
     },
+
     {
       "featureID": "7",
-      "type": "TwoDates",
+      "type": "QMDates",
       "path": "",
+      "doEval": "",
 
-      "successValues": ["boneScan.date.$date.$numberLong", "boneScan.date.$date.$numberLong"],
+      "successValues": [
+        "boneScan.date.$date.$numberLong",
+        "/eot/treatmentDeliveries.startDate.$date.$numberLong",
+        "/otv/treatmentDeliveries.startDate.$date.$numberLong"
+      ],
       "excludeValues": [],
 
-      "YesBranchID": "99",
-      "NoBranchID": "100"
+      "YesBranchID": "pass",
+      "NoBranchID": "fail"
     },
 
-
-
     {
-      "featureID": "99",
-      "type": "end",
-      "result": "pass"
+      "featureID": "pass",
+      "type": "end"
     },
     {
-      "featureID": "100",
-      "type": "end",
-      "result": "fail"
+      "featureID": "fail",
+      "type": "end"
     },
     {
-      "featureID": "101",
-      "type": "end",
-      "result": "exclude"
+      "featureID": "exclude",
+      "type": "end"
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "startId": "2",
+  "nodes": [
+    {
+      "featureID": "2",
+      "type": "InAList",
+      "path": "diagnosis",
+      "doEval": "",
+      "successValues": ["Prostate", "Prostate Cancer"],
+      "excludeValues": [],
+      "YesBranchID": "4",
+      "NoBranchID": "exclude"
+    },
+
+    {
+      "featureID": "4",
+      "type": "List",
+      "path": "qualityOfLife",
+      "doEval": "instrument",
+      "successValues": ["AUA IPSS", "IIEF", "SHIM", "EPIC-26", "EPIC-CP"],
+      "excludeValues": [],
+      "YesBranchID": "pass",
+      "NoBranchID": "exclude"
+    },
+
+
+    {
+      "featureID": "pass",
+      "type": "end"
+    },
+    {
+      "featureID": "fail",
+      "type": "end"
+    },
+    {
+      "featureID": "exclude",
+      "type": "end"
+    }
+  ]
+}

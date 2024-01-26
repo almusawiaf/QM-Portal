@@ -1,0 +1,308 @@
+{
+  "_id": {
+    "$oid": "6509b5e19e49dd452dee536d"
+  },
+  "__t": "SignedProstateFollowUpNote",
+  "caseId": {
+    "$oid": "647e416edb75e9b76ea46b3f"
+  },
+  "TNMStaging": {
+    "TNM": "",
+    "staging": "",
+    "nccnRiskGroup": "",
+    "groupStage": ""
+  },
+  "__v": 0,
+  "additionalSignatures": [],
+  "age": null,
+  "anticipatedStartDate": null,
+  "anticipatedStartDateKnown": false,
+  "biochemicalFailure": null,
+  "biopsies": {
+    "type": ""
+  },
+  "biopsySelection": "none",
+  "boneDensityAssessment": {
+    "status": "",
+    "results": ""
+  },
+  "boneScan": {
+    "status": "",
+    "type": "",
+    "results": ""
+  },
+  "brachytherapy": {
+    "priorTreatment": false,
+    "date": null
+  },
+  "confirmed": false,
+  "ctcaes": [
+    {
+      "label": "erectileDysfunction",
+      "displayName": "Erectile Dysfunction",
+      "grade": "true"
+    },
+    {
+      "label": "prostaticObstruction",
+      "displayName": "Prostatic obstruction",
+      "grade": "true"
+    },
+    {
+      "label": "cystitis",
+      "displayName": "Cystitis",
+      "grade": "true"
+    },
+    {
+      "label": "dysuria",
+      "displayName": "Dysuria",
+      "grade": "true"
+    },
+    {
+      "label": "hematuria",
+      "displayName": "Hematuria",
+      "grade": "true"
+    },
+    {
+      "label": "urinaryRetention",
+      "displayName": "Urinary Retention",
+      "grade": "true"
+    },
+    {
+      "label": "urinaryUrgency",
+      "displayName": "Urinary Urgency",
+      "grade": "true"
+    },
+    {
+      "label": "urinaryIncontinence",
+      "displayName": "Urinary Incontinence",
+      "grade": "true"
+    },
+    {
+      "label": "diarrhea",
+      "displayName": "Diarrhea",
+      "grade": "true"
+    },
+    {
+      "label": "rectalHemorrhage",
+      "displayName": "Rectal Hemorrhage",
+      "grade": "true"
+    },
+    {
+      "label": "rectalPain",
+      "displayName": "Rectal Pain",
+      "grade": "true"
+    },
+    {
+      "label": "rectalFistula",
+      "displayName": "Rectal Fistula",
+      "grade": "true"
+    },
+    {
+      "label": "fecalIncontinence",
+      "displayName": "Fecal Incontinence",
+      "grade": "true"
+    },
+    {
+      "label": "smallIntestineObstruction",
+      "displayName": "Small Intestine Obstruction",
+      "grade": "true"
+    }
+  ],
+  "currentManagement": "",
+  "diseaseSite": "prostate",
+  "externalBeam": {
+    "priorTreatment": false,
+    "endDate": null
+  },
+  "gleasonScoreTotal": {
+    "primary": "",
+    "secondary": ""
+  },
+  "hasTreatmentBeenLoaded": true,
+  "histology": "Adenocarcinoma",
+  "icdCodes": [],
+  "includeBloodCount": true,
+  "includeLiverLabs": true,
+  "includeRenalLabs": true,
+  "kpsEcogOption": "ECOG",
+  "kpsEcogScore": null,
+  "labDescription": "",
+  "locallyRecurrent": null,
+  "metastatic": null,
+  "ned": null,
+  "noteName": "followUp",
+  "painScore": 0,
+  "patientName": null,
+  "pelvicCt": {
+    "status": "",
+    "results": ""
+  },
+  "pelvicMri": {
+    "status": "",
+    "results": ""
+  },
+  "petCt": {
+    "status": "",
+    "results": ""
+  },
+  "physicalExam": "",
+  "plan": null,
+  "primaryPSA": {
+    "collectionDate": "",
+    "collectionTime": "",
+    "value": "",
+    "units": "",
+    "normalRange": ""
+  },
+  "priorRadiotherapy": true,
+  "prostatectomy": {
+    "ECE": "",
+    "SVI": "",
+    "primary": "",
+    "secondary": "",
+    "performed": false,
+    "date": {
+      "$date": {
+        "$numberLong": "1675296000000"
+      }
+    }
+  },
+  "qualityOfLife": [
+    {
+      "instrument": "",
+      "score": null
+    },
+    {
+      "instrument": "",
+      "score": null
+    }
+  ],
+  "signature": {
+    "timestamp": {
+      "$date": {
+        "$numberLong": "1695135201587"
+      }
+    }
+  },
+  "signedDocument": "Follow Up\n\nGeneral\n\n\n\nOncologic History\n\nA prostatectomy was performed on 02/02/2023\n\nNo hormone therapy or chemotherapy agents were delivered. \n[ X ]\nCourse: Course 1\nReason: Prostate cancer\nIntent: Definitive\nModalities: Photons\nTechniques: VMAT, IMRT\nBody Sites: Pelvis, Prostate, SV\nSession Count: 44\nStatus: Complete\nStart Date: Date: 10/25/2016\nEnd Date: Date: 12/28/2016\n\nVolumes\n\tName: pelvis\n\tTotal Delivered Dose: 4500 cGy\n\tDelivered Fractions: 25\n\n\tName: prostate+SV\n\tTotal Delivered Dose: 3420 cGy\n\tDelivered Fractions: 19\n\n\n\nCurrent Management\n\n\n\n\n\nReview of Systems\nPatient review of systems.\n\nReview of Systems\n\nThere has been no reported change in weight.\nGeneral: The patient affirms fatigue.\nGU: The patient affirms dysuria and kidney stones.\nGI: The patient affirms early satiety.\n\n\n\n\n\n\n\n\n\n\nExam\n\nAssesment/Subjective\n\n\nCTCAE\n\n\n\n\n\n\nExam\n\nGeneral\n\nPain Score: 5\nPerformance Instrument: KPS: 80, ECOG: 1, Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work\n\nDiagnostic Tests\n\nBone Scan\nStatus: Completed\nType: Sodium Fluoride\nTest Results: Bone scan performed and NED\n\n\nPelvic CT\nStatus: Completed\n\n\nPelvic MRI\nStatus: Completed\n\n\nPET CT\nStatus: Completed\nType: Ga68 PSMA\n\n\nBone Density Assessment\nStatus: Pending\n\n\n\nVitals\n\nBlood pressure: 130 / 62           Date: 5/25/2023\nHeart rate: 89                     Date: 5/25/2023\nTemperature: 97.8 F                Date: 5/25/2023\nRespiratory rate: 20               Date: 5/25/2023\nWeight: 290.8 lb                   Date: 5/25/2023\nHeight: 69 in                      Date: 5/25/2023\n\n\nLabs\n\nRenal Function\nLab Test                           Value               Units        Normal Range                Date\ncreatinine                          0.81               mg/dL           0.7 - 1.5          01/03/2022\ngfr                                  >60         mL/min/1.73                >=60          01/03/2022\nureaNitrogen                           9               mg/dL              6 - 23          01/03/2022\n\nLiver Function\nLab Test                           Value               Units        Normal Range                Date\nalt                                                                                                 \nast                                                                                                 \nalk                                                                                                 \nbilirubin                                                                                           \ntotalProtein                                                                                        \nggt                                                                                                 \nldh                                                                                                 \npt                                                                                                  \n\nBlood Count\nLab Test                           Value               Units        Normal Range                Date\nhct                                 39.2                   %         38.6 - 50.1          10/05/2020\nhgb                               12.9 L                g/dl         13.2 - 17.3          10/05/2020\nmch                                                                                                 \nmchc                                                                                                \nmcv                                                                                                 \nplt                                  231               K/cmm           152 - 375          10/05/2020\nrbc                                  5.0             Mil/cmm         4.21 - 5.84          10/05/2020\nrdw                                                                                                 \nwbc                                  6.3               K/cmm           3.2 - 9.5          10/05/2020\n\nLab Result Description: \n\n\n\n\nAssessment\n\nDisease Status\n\nOn Surveillance (no definitive treatment to date): [ X ]\nNED: [ X ]\nBiochemical failure: [ X ]\nLocally recurrent: [ X ]\nMetastatic: [ X ]\n\nPhysician Assessment\n\nAssessment: NED\n\n\n\n\n",
+  "signedOn": {
+    "$date": {
+      "$numberLong": "1695135201587"
+    }
+  },
+  "subjective": {
+    "assessmentSelected": "",
+    "fatigue": "",
+    "urinaryFrequency": "",
+    "dailyVoidingInterval": null,
+    "nocturia": null,
+    "painScore": "",
+    "painLocation": "",
+    "painComment": "",
+    "guSymptomNone": false,
+    "guSymptomWeakStream": false,
+    "guSymptomObstruction": false,
+    "guSymptomIncontinence": false,
+    "guSymptomHematuria": false,
+    "guSymptomDysuria": false,
+    "guSymptomOther": false,
+    "guSymptomOtherDescription": "",
+    "giSymptomNone": false,
+    "giSymptomDiarrhea": false,
+    "giSymptomConstipation": false,
+    "giSymptomNausea": false,
+    "giSymptomVomiting": false,
+    "giSymptomRectalDiscomfort": false,
+    "giSymptomOccasionalBlood": false,
+    "giSymptomOther": false,
+    "giSymptomOtherDescription": "",
+    "giInterventionNone": false,
+    "giInterventionDietaryChanges": false,
+    "giInterventionOtcMeds": false,
+    "giInterventionPrescriptionMeds": false,
+    "giInterventionOther": false,
+    "giInterventionOtherDescription": "",
+    "urinaryInterventionAlpha": false,
+    "urinaryInterventionAntispasmodic": false,
+    "urinaryInterventionOther": false,
+    "urinaryInterventionOtherDescription": "",
+    "additionalNursingComments": ""
+  },
+  "surveillance": null,
+  "systemicTherapy": {
+    "priorChemotherapy": {
+      "performed": false
+    },
+    "description": "",
+    "performed": false,
+    "priorHormones": false
+  },
+  "systemicTherapyForOtherDiagnosis": {
+    "description": ""
+  },
+  "treatment": null,
+  "treatmentDeliveries": [
+    {
+      "id": "",
+      "name": "Course 1",
+      "reason": "Prostate cancer",
+      "intent": "Definitive",
+      "modalities": "Photons",
+      "techniques": "VMAT, IMRT",
+      "bodySites": "Pelvis, Prostate, SV",
+      "startDate": {
+        "$date": {
+          "$numberLong": "1477440000000"
+        }
+      },
+      "endDate": {
+        "$date": {
+          "$numberLong": "1482969600000"
+        }
+      },
+      "sessionCount": 44,
+      "status": "Complete",
+      "uniformFractionation": true,
+      "volumes": [
+        {
+          "name": "pelvis",
+          "totalDeliveredDose": 4500,
+          "fractionsDelivered": 25,
+          "uniformFractionation": true
+        },
+        {
+          "name": "prostate+SV",
+          "totalDeliveredDose": 3420,
+          "fractionsDelivered": 19,
+          "uniformFractionation": true
+        }
+      ],
+      "phases": [
+        {
+          "name": "",
+          "totalDeliveredDose": 0
+        }
+      ],
+      "additionalInstructions": ""
+    }
+  ],
+  "updateTreatmentDateTime": {
+    "$date": {
+      "$numberLong": "1687271443454"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1692731918161"
+    }
+  },
+  "version": "1.0.0",
+  "visitDate": {
+    "$date": {
+      "$numberLong": "1686334997211"
+    }
+  },
+  "weight": {
+    "unit": "lbs"
+  }
+}

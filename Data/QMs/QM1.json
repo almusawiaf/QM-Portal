@@ -3,13 +3,13 @@
     "nodes": [
         {
             "featureID": "1",
-            "type": "InAList",
+            "type": "HasAValue",
             "path": "presentOncologic.radiotherapy",
             "doEval": "",
             "successValues":[true],    
             "excludeValues":[],        
             "YesBranchID": "2",
-            "NoBranchID": "101"
+            "NoBranchID": "exclude"
         },
         {
             "featureID": "2",
@@ -19,7 +19,7 @@
             "successValues":["Prostate", "Prostate Cancer"],
             "excludeValues":[],        
             "YesBranchID": "3",
-            "NoBranchID": "101"
+            "NoBranchID": "exclude"
         },
         {
             "featureID": "3",
@@ -29,16 +29,16 @@
             "successValues":[],
             "excludeValues":[], 
             "YesBranchID": "4",
-            "NoBranchID": "101"
+            "NoBranchID": "exclude"
         },
         {
             "featureID": "4",
-            "type": "InAList",
+            "type": "HasAValue",
             "path": "patientSelectedTreatment.palliative",
             "doEval": "",
             "successValues":[false],
             "excludeValues":[],        
-            "YesBranchID": "101",
+            "YesBranchID": "exclude",
             "NoBranchID": "5"
         },
         {
@@ -49,7 +49,7 @@
             "successValues":[],
             "excludeValues":[],        
             "YesBranchID": "6",
-            "NoBranchID": "100"
+            "NoBranchID": "fail"
         },
         {
             "featureID": "6",
@@ -79,7 +79,7 @@
             "successValues":[],
             "excludeValues":[],        
             "YesBranchID": "9",
-            "NoBranchID": "100"
+            "NoBranchID": "fail"
         },
         {
             "featureID": "9",
@@ -89,7 +89,7 @@
             "successValues":[],
             "excludeValues":[],        
             "YesBranchID": "10",
-            "NoBranchID": "100"
+            "NoBranchID": "fail"
         },
         {
             "featureID": "10",
@@ -99,36 +99,33 @@
             "successValues":[],
             "excludeValues":[],        
             "YesBranchID": "11",
-            "NoBranchID": "100"
+            "NoBranchID": "fail"
         },
         {
             "featureID": "11",
-            "type": "TwoDates",
+            "type": "QMDates",
             "path": "",
             "doEval": "",
             "successValues":[
-                "signedOn.$date.$numberLong",
-                "presentOncologic.prostatectomy.date.$date.$numberLong"
+                "/consult/signedOn.$date.$numberLong",
+                "/consult/presentOncologic.prostatectomy.date.$date.$numberLong"
             ],
             "excludeValues":[],        
-            "YesBranchID": "99",
-            "NoBranchID": "100"
+            "YesBranchID": "pass",
+            "NoBranchID": "fail"
         },
         
         {
-            "featureID": "99",
-            "type": "end",
-            "result": "pass"
+            "featureID": "pass",
+            "type": "end"
         },
         {
-            "featureID": "100",
-            "type": "end",
-            "result": "fail"
+            "featureID": "fail",
+            "type": "end"
         },
         {
-            "featureID": "101",
-            "type": "end",
-            "result": "exclude"
+            "featureID": "exclude",
+            "type": "end"
         }
     ]
 }

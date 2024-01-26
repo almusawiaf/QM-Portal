@@ -1,0 +1,150 @@
+{
+  "_id": {
+    "$oid": "6489ea4f9e49dd452da184ef"
+  },
+  "__t": "SignedProstateSimNote",
+  "caseId": {
+    "$oid": "647e416edb75e9b76ea46b3f"
+  },
+  "__v": 0,
+  "additionalSignatures": [],
+  "confirmed": false,
+  "considerations": {
+    "patientConsiderations": {
+      "blind": null,
+      "deaf": null,
+      "paralyzed": null,
+      "contactPrecautions": null,
+      "fallPrecautions": null,
+      "translatorNeeded": null,
+      "liftingAssistance": null,
+      "bariatricConsiderations": null,
+      "other": null,
+      "otherDetails": null
+    },
+    "ifFemale": null,
+    "ifMale": null,
+    "rtSequencing": "Primary RT",
+    "chemotherapyCoordination": "No",
+    "hormoneCoordination": "Yes",
+    "chemoSequencing": "",
+    "implantedFiducials": "No",
+    "fiducialType": "",
+    "fiducialLocation": "",
+    "metalPresent": "No",
+    "npo": "No",
+    "clinicalTrialProtocol": "Prostate Default",
+    "priorRtDetails": "",
+    "anesthesia": "No",
+    "treatmentIntent": "Definitive",
+    "implantedDevices": null,
+    "clinicalTrialEnrollment": "Under consideration for protocol",
+    "priorRt": "No"
+  },
+  "diseaseSite": "prostate",
+  "general": {
+    "pathologyPresent": "Yes",
+    "labsVerified": "Yes",
+    "orderingRadiationOncologist": "Dr. ABC",
+    "orderDate": {
+      "$date": {
+        "$numberLong": "1646784000000"
+      }
+    },
+    "treatmentStart": "Standard Start",
+    "treatmentStartDetails": "",
+    "treatmentsite": "Prostate Cancer",
+    "histology": "Adenocarcinoma"
+  },
+  "icdCodes": [],
+  "noteName": "sim",
+  "signature": {
+    "timestamp": {
+      "$date": {
+        "$numberLong": "1686760015139"
+      }
+    }
+  },
+  "signedDocument": "Simulation\nPatient details for prostate cancer simulation.\n\nGeneral\n\nTreatment site: Prostate Cancer\nPathology present in chart?: Yes\nLabs verified?: Yes\nOrdering Radiation Oncologist: Dr. ABC\nHistology: Adenocarcinoma\nOrder Date: 03/09/2022\nTreatment Start Type: Standard Start\n\nOrders and Considerations\n\nTreatment Intent: Definitive\nRT Sequencing: Primary RT\nDoes Chemotherapy needs to be coordinated with RT?: No\nDoes Hormone therapy needs to be coordinated with RT?: Yes\nImplanted Fiducials: No\n\n\nMetals in treatment area: No\nPatient NPO?: No\nClinical Trial Patient: Under consideration for protocol\nPrior Radiation: No\nAnesthesia: No\nThe Patient Considerations are Blind, Deaf, Paralyzed, Contact Precautions, Fall Precautions, Translator Needed, Lifting Assistance, Bariatric Considerations and Other (details in Additional Considerations).\nAdditional considerations: \n\nSimulation Orders\n\nC.T./ MR Simulation Protocol: [ X ]\nIV: None\nOral: None\nTop of scan: L2\nBottom of scan: mid-femur\nSlice Thickness (in mm): 3\nBody orientation: Head first Supine\nHead position: Neutral\nArms: On Chest\nKnees/Legs: Bent with Knee Cushion\nRectum: Empty\nBladder: Full\nAdditional Patient setup instructions: [ X ]\nAdditional Setup Instructions: Vac loc bag required.\nDentures: [ X ]\nHearing aids: [ X ]\nUse devices for patient immobilization: [ X ]\nUse devices for patient immobilization description: \nBite Block: Standard\nBolus to be added at Simulation: [ X ]\nLocation of bolus: Scar\nCall MD prior to Simulation: [ X ]\nCall Physics/Dosimetry prior to Simulation: [ X ]\nRadiological studies needed for fusion?: Yes\nDescription: MRI prostate\n\n\n\n\n",
+  "signedOn": {
+    "$date": {
+      "$numberLong": "1686760015139"
+    }
+  },
+  "simulationOrders": {
+    "motionManagement": {
+      "fourDScan": null,
+      "motionManagement": null,
+      "motionManagementType": null,
+      "motionManagementTypeDetails": ""
+    },
+    "contrast": {
+      "ivContrast": "None",
+      "oral": "None",
+      "other": null,
+      "allergies": null,
+      "takingMetformin": null,
+      "ivContrastInLastThirty": null
+    },
+    "setupInstructions": {
+      "bodyOrientation": "Head first Supine",
+      "otherBodyOrientation": "",
+      "headPosition": "Neutral",
+      "otherHeadPosition": "",
+      "armPosition": "On Chest",
+      "otherArmPosition": "",
+      "kneeLegPosition": "Bent with Knee Cushion",
+      "otherKneeLegPosition": "",
+      "rectum": "Empty",
+      "otherRectum": "",
+      "bladder": "Full",
+      "otherBladder": "",
+      "wireOrMarker": null,
+      "otherWireOrMarker": "",
+      "additionalInstructions": null,
+      "additionalInstructionsDetails": ""
+    },
+    "scanRange": {
+      "topOfScan": "L2",
+      "bottomOfScan": "mid-femur",
+      "centralAxis": "",
+      "sliceThickness": 3
+    },
+    "removeDevices": {
+      "dentures": null,
+      "hearingAids": null,
+      "othersDevices": null,
+      "otherDevicesDetails": ""
+    },
+    "diseaseSite": "",
+    "ctMrProtocol": true,
+    "clinicalSimElectronSetUp": null,
+    "useImmobilization": true,
+    "useImmobilizationDescription": "",
+    "biteBlock": "Standard",
+    "bolusAddedAtSim": null,
+    "bolusAddedAtSimDetails": "",
+    "bolusLocation": null,
+    "callMdPriorToSim": null,
+    "callMdPriorToSimDetails": "",
+    "callPhysicsPriorToSim": null,
+    "additionalSimInstructions": "",
+    "radiologicalStudiesNeeded": "Yes",
+    "radiologicalStudiesDetails": "MRI prostate"
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1692731441839"
+    }
+  },
+  "version": "1.0.0",
+  "visitDate": {
+    "$date": {
+      "$numberLong": "1686334302169"
+    }
+  },
+  "cardiacImplant": {
+    "implantedDevices": null,
+    "other": ""
+  }
+}

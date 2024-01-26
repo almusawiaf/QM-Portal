@@ -1,0 +1,50 @@
+{
+  "startId": "2",
+  "nodes": [
+    {
+      "featureID": "2",
+      "type": "InAList",
+      "path": "diagnosis",
+      "doEval": "",
+      "successValues": ["Prostate Cancer"],
+      "excludeValues": [],
+      "YesBranchID": "3",
+      "NoBranchID": "exclude"
+    },
+
+    {
+      "featureID": "3",
+      "type": "InAList",
+      "path": "TNMStaging.nccnRiskGroup",
+      "doEval": "",
+      "successValues": ["Low", "Very Low"],
+      "excludeValues": [],
+      "YesBranchID": "4",
+      "NoBranchID": "exclude"
+    },
+
+    {
+      "featureID": "4",
+      "type": "HasAValue",
+      "path": "patientSelectedTreatment.activesurveillance",
+      "doEval": "",
+      "successValues": [true],
+      "excludeValues": [],
+      "YesBranchID": "pass",
+      "NoBranchID": "fail"
+    },
+
+    {
+      "featureID": "pass",
+      "type": "end"
+    },
+    {
+      "featureID": "fail",
+      "type": "end"
+    },
+    {
+      "featureID": "exclude",
+      "type": "end"
+    }
+  ]
+}

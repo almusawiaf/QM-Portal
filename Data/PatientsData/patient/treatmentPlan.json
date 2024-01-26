@@ -1,0 +1,164 @@
+{
+  "_id": {
+    "$oid": "6509b4c69e49dd452dee525b"
+  },
+  "__t": "SignedProstateTreatmentPlanNote",
+  "caseId": {
+    "$oid": "647e416edb75e9b76ea46b3f"
+  },
+  "__v": 0,
+  "additionalPatientDetails": {
+    "patientConsiderations": {
+      "blind": null,
+      "othersText": "",
+      "deaf": null,
+      "contactPrecautions": null,
+      "fallPrecautions": null,
+      "translatorNeeded": null,
+      "liftingAssistance": null,
+      "bariatricConsiderations": null,
+      "others": null,
+      "paralyzed": null
+    },
+    "pregnancyStatus": null,
+    "anesthesia": null,
+    "treatmentVolumeExpansionIntent": "",
+    "priorRtDetails": "",
+    "cardiacDevicesDetails": "",
+    "clinicalTrialDetails": "",
+    "oralContrast": null,
+    "oralContrastQuantity": null,
+    "oralContrastIntakeTime": "",
+    "additionalConsiderations": "",
+    "priorRt": "No",
+    "cardiacDevices": "No"
+  },
+  "additionalSignatures": [],
+  "anticipatedStartDate": null,
+  "anticipatedStartDateKnown": false,
+  "confirmed": false,
+  "diseaseSite": "prostate",
+  "generalPrognosticFactors": {
+    "histology": "Adenocarcinoma",
+    "treatmentStart": "Standard Start",
+    "rtSequencing": "Primary RT",
+    "chemoSequencing": null,
+    "hormoneTherapySequencing": "Concurrent",
+    "iPSA": "13.10 H",
+    "iPSADate": {
+      "$date": {
+        "$numberLong": "1641168000000"
+      }
+    },
+    "treatmentIntent": "Definitive",
+    "diagnosis": "Prostate Cancer",
+    "TNMvalues": "N",
+    "primary": 4,
+    "secondary": 3,
+    "gleasonDate": {
+      "$date": {
+        "$numberLong": "1635206400000"
+      }
+    }
+  },
+  "hasTreatmentBeenLoaded": true,
+  "icdCodes": [],
+  "medicalNecessity": {
+    "criticalStructureProximity": true,
+    "criticalStructureList": "Rectum, Bladder, Bowel, Femurs",
+    "criticalStructureDetails": "",
+    "narrowMargins": null,
+    "narrowMarginsStructures": null,
+    "narrowMarginsDetails": "",
+    "adjacentPriorRadiation": null,
+    "adjacentPriorRadiationDose": null,
+    "targetConcaveConvex": null,
+    "targetConcaveConvexStructures": null,
+    "targetConcaveConvexDetails": "",
+    "doseEscalation": null,
+    "doseEscalationConventional": null,
+    "doseEscalationIMRT": null,
+    "other": false,
+    "otherDetails": "",
+    "specialTreatmentJustification": "",
+    "criticalStructureListOther": ""
+  },
+  "noteName": "treatmentPlan",
+  "planning": {
+    "calculationsPerBeam": true,
+    "weeklyPhysicsAssessment": true,
+    "verificationSimulation": true,
+    "imageRegistration": null,
+    "imageRegistrationDetails": "",
+    "specialPhysicsConsult": null,
+    "specialPhysicsConsultOther": null,
+    "specialPhysicsConsultOtherDetails": "",
+    "specialTreatmentProcedure": null,
+    "specialTreatmentStructures": null,
+    "specialMedicalPhysicsConsultRequest": null,
+    "specialTreatmentProcedueRequest": null,
+    "specialMedicalPhysicsConsultRequestText": "",
+    "specialTreatmentProcedueRequestText": ""
+  },
+  "signature": {
+    "timestamp": {
+      "$date": {
+        "$numberLong": "1695134918434"
+      }
+    }
+  },
+  "signedDocument": "Treatment Planning\nPatient treatment planning for prostate cancer treatment.\n\nGeneral and Prognostic Factors\n\nDiagnosis: Prostate Cancer \nTNM: N\nTreatment Intent: Definitive\nHistology: Adenocarcinoma\nTreatment Start Type: Standard Start\nRT Sequencing: Primary RT\nGleason Primary: 4\nGleason Secondary: 3\nGleason Date: 2021-10-26T00:00:00.000Z\nPSA: 13.10 H\nPSA Date: 2022-01-03T00:00:00.000Z\nHormone Therapy Sequencing: Concurrent\n\n\n\nPlanned Treatments\n\nCourse: C1\nReason: Prostate Cancer\nIntent: Definitive\nModalities: Photons\nTechniques: VMAT, IMRT\nBody Sites: Prostate\nSession Count: 0\nStatus: \nStart Date: \nEnd Date: \n\nVolumes\n\tName: PTV_6000: prostate/SV\n\tTotal Delivered Dose: 6000 cGy\n\tDelivered Fractions: 20\n\n\tName: PTV_4400: Pelvis\n\tTotal Delivered Dose: 4400 cGy\n\tDelivered Fractions: 44\n\n\n\nAdditional Patient Details\n\nPrior Radiation: No\nImplanted Cardiac Devices: No\n\nMedical Necessity for Stereotactic or Intensity Modulated Delivery\n\nTarget Volume is in close proximity to critical structures that must be protected: [ X ]\nCritical Structures that are at risk for excess dose toxicity: Rectum, Bladder, Bowel, Femurs\n\nPlanning\n\nPerform calculations for each beam as part of the planning process and use beam modifying devices: [ X ]\nPerform weekly physics assessment: [ X ]\nPerform verification simulation: [ X ]\nSpecial Medical Physics Consult request: [ X ]\nSpecial medical physics consult request: Image fusion request (CT/PET)\nSpecial treatment procedure request: [ X ]\nSpecial treatment procedure request: \n\n\n\n\n",
+  "signedOn": {
+    "$date": {
+      "$numberLong": "1695134918434"
+    }
+  },
+  "treatmentDeliveries": [
+    {
+      "id": "",
+      "name": "C1",
+      "reason": "Prostate Cancer",
+      "intent": "Definitive",
+      "modalities": "Photons",
+      "techniques": "VMAT, IMRT",
+      "bodySites": "Prostate",
+      "startDate": null,
+      "endDate": null,
+      "sessionCount": 0,
+      "status": "",
+      "uniformFractionation": true,
+      "volumes": [
+        {
+          "name": "PTV_6000: prostate/SV",
+          "totalDeliveredDose": 6000,
+          "fractionsDelivered": 20,
+          "uniformFractionation": true
+        },
+        {
+          "name": "PTV_4400: Pelvis",
+          "totalDeliveredDose": 4400,
+          "fractionsDelivered": 44,
+          "uniformFractionation": true
+        }
+      ],
+      "phases": [],
+      "additionalInstructions": ""
+    }
+  ],
+  "updateTreatmentDateTime": {
+    "$date": {
+      "$numberLong": "1686854002509"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1692731424542"
+    }
+  },
+  "version": "1.0.0",
+  "visitDate": {
+    "$date": {
+      "$numberLong": "1686334337771"
+    }
+  }
+}

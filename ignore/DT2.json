@@ -10,7 +10,7 @@
             "successValues":"",
             
             "YesBranchID": "2",
-            "NoBranchID": "101"
+            "NoBranchID": "exclude"
         },
         {
             "featureID": "2",
@@ -21,7 +21,7 @@
             "successValues":["Prostate"],
 
             "YesBranchID": "3",
-            "NoBranchID": "101"
+            "NoBranchID": "exclude"
         },
         {
             "featureID": "3",
@@ -32,7 +32,7 @@
             "successValues":["High", "Very High"],
 
             "YesBranchID": "4",
-            "NoBranchID": "101"
+            "NoBranchID": "exclude"
         },
         {
             "featureID": "4",
@@ -42,21 +42,21 @@
             "featureType":"YesNo",
             "successValues":"Yes",
 
-            "YesBranchID": "99",
-            "NoBranchID": "100"
+            "YesBranchID": "pass",
+            "NoBranchID": "fail"
         },
         {
-            "featureID": "99",
+            "featureID": "pass",
             "type": "end",
             "result": "pass"
         },
         {
-            "featureID": "100",
+            "featureID": "fail",
             "type": "end",
             "result": "fail"
         },
         {
-            "featureID": "101",
+            "featureID": "exclude",
             "type": "end",
             "result": "exclude"
         }
