@@ -51,9 +51,9 @@
       "path": "",
       "doEval": "",
       "successValues": [
-        "petCt.date.$date.$numberLong",
-        "/eot/treatmentDeliveries.startDate.$date.$numberLong",
-        "/otv/treatmentDeliveries.startDate.$date.$numberLong"
+        "consult/petCt.date.$date.$numberLong",
+        "eot/treatmentDeliveries.startDate.$date.$numberLong",
+        "otv/treatmentDeliveries.startDate.$date.$numberLong"
       ],
       "excludeValues": [],
       "YesBranchID": "pass",

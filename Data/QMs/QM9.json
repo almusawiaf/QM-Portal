@@ -26,7 +26,7 @@
     {
       "featureID": "5",
       "type": "HasAValue",
-      "path": "/sim/setupInstructions.rectum",
+      "path": "sim/setupInstructions.rectum",
       "doEval": "",
       "successValues": ["Empty"],
       "excludeValues": [],
@@ -37,7 +37,7 @@
     {
       "featureID": "6",
       "type": "HasAValue",
-      "path": "/sim/setupInstructions.bladder",
+      "path": "sim/setupInstructions.bladder",
       "doEval": "",
       "successValues": ["Full"],
       "excludeValues": [],

@@ -73,9 +73,9 @@
       "doEval": "",
 
       "successValues": [
-        "boneScan.date.$date.$numberLong",
-        "/eot/treatmentDeliveries.startDate.$date.$numberLong",
-        "/otv/treatmentDeliveries.startDate.$date.$numberLong"
+        "consult/boneScan.date.$date.$numberLong",
+        "eot/treatmentDeliveries.startDate.$date.$numberLong",
+        "otv/treatmentDeliveries.startDate.$date.$numberLong"
       ],
       "excludeValues": [],
 

@@ -107,8 +107,8 @@
             "path": "",
             "doEval": "",
             "successValues":[
-                "/consult/signedOn.$date.$numberLong",
-                "/consult/presentOncologic.prostatectomy.date.$date.$numberLong"
+                "consult/signedOn.$date.$numberLong",
+                "consult/presentOncologic.prostatectomy.date.$date.$numberLong"
             ],
             "excludeValues":[],        
             "YesBranchID": "pass",
