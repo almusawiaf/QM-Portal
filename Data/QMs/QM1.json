@@ -25,7 +25,7 @@
             "featureID": "3",
             "type": "HasAValue",
             "path": "TNMStaging.TNM",
-            "doEval": "TNMStaging",
+            "doEval": "",
             "successValues":[],
             "excludeValues":[], 
             "YesBranchID": "4",
@@ -33,10 +33,10 @@
         },
         {
             "featureID": "4",
-            "type": "HasAValue",
+            "type": "InAList",
             "path": "patientSelectedTreatment.palliative",
             "doEval": "",
-            "successValues":[false],
+            "successValues":["True"],
             "excludeValues":[],        
             "YesBranchID": "exclude",
             "NoBranchID": "5"
@@ -105,10 +105,10 @@
             "featureID": "11",
             "type": "QMDates",
             "path": "",
-            "doEval": "",
+            "doEval": "==",
             "successValues":[
                 "consult/signedOn.$date.$numberLong",
-                "consult/presentOncologic.prostatectomy.date.$date.$numberLong"
+                "consult/visitDate.$date.$numberLong"
             ],
             "excludeValues":[],        
             "YesBranchID": "pass",

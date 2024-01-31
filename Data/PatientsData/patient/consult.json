@@ -194,7 +194,7 @@
       }
     },
     "nodalStaging": {
-      "method": "",
+      "method": "XXX",
       "positiveNode": "",
       "negativeNode": "",
       "description": ""
